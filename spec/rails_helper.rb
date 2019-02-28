@@ -19,6 +19,7 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.use_transactional_fixtures = true
@@ -37,7 +38,7 @@ RSpec.configure do |config|
   end
 
   config.infer_spec_type_from_file_location!
-  # config.include RequestSpecHelper
+  config.include RequestSpecHelper, type: :request
   # config.include ControllerSpecHelper
   config.filter_rails_from_backtrace!
 end
