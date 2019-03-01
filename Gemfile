@@ -16,6 +16,7 @@ gem 'will_paginate', '~> 3.1.0'
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'pry-rails'
+  gem 'rspec_junit_formatter'
 end
 
 group :test do
