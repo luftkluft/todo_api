@@ -21,6 +21,7 @@ end
 group :test do
   gem 'coveralls', require: false
   gem 'database_cleaner'
+  gem 'dox', require: false
   gem "factory_bot_rails", "~> 4.0"
   gem 'shoulda-matchers', '~> 3.1'
 end
