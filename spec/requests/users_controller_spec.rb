@@ -8,7 +8,6 @@ RSpec.describe 'Users API', type: :request do
     attributes_for(:user, password_confirmation: user.password)
   end
 
-  # User signup test suite
   describe 'POST /signup' do
     include Docs::V1::Users::Create
     context 'when valid request' do

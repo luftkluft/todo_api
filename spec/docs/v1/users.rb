@@ -3,7 +3,6 @@ module Docs
     module Users
       extend Dox::DSL::Syntax
 
-      # define common resource data for each action
       document :api do
         resource 'Users' do
           endpoint '/signup'
@@ -11,7 +10,7 @@ module Docs
           group 'Todo_API'
         end
       end
-      # define data for specific action
+
       document :create do
         action 'Post signup'
       end

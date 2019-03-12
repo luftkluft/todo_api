@@ -3,7 +3,6 @@ module Docs
     module Items
       extend Dox::DSL::Syntax
 
-      # define common resource data for each action
       document :api do
         resource 'Items' do
           endpoint '/todos/:todo_id/items'
@@ -11,7 +10,7 @@ module Docs
           group 'Todo_API'
         end
       end
-      # define data for specific action
+
       document :index do
         action 'Get todos/:todo_id/items'
       end

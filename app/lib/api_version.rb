@@ -6,7 +6,6 @@ class ApiVersion
     @default = default
   end
 
-  # check whether version is specified or is default
   def matches?(request)
     check_headers(request.headers) || default
   end
@@ -14,7 +13,6 @@ class ApiVersion
   private
 
   def check_headers(headers)
-    # check version from Accept headers; expect custom media type `todos`
     accept = headers[:accept]
     accept&.include?("apiversion#{version}+json")
   end

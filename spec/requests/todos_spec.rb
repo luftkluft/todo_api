@@ -2,16 +2,13 @@ require 'rails_helper'
 
 RSpec.describe 'Todos API', type: :request do
   include Docs::V1::Todos::Api
-  # add todos owner
   let(:user) { create(:user) }
   let!(:todos) { create_list(:todo, 10, created_by: user.id) }
   let(:todo_id) { todos.first.id }
-  # authorize request
   let(:headers) { valid_headers }
 
   describe 'GET /todos' do
     include Docs::V1::Todos::Index
-    # update request with headers
     before { get '/todos', params: {}, headers: headers }
 
     it 'returns todos', :dox do
@@ -55,7 +52,6 @@ RSpec.describe 'Todos API', type: :request do
   describe 'POST /todos' do
     include Docs::V1::Todos::Create
     let(:valid_attributes) do
-      # send json payload
       { title: 'Learn Elm', created_by: user.id.to_s }.to_json
     end
 
