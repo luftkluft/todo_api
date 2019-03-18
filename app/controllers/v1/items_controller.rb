@@ -34,10 +34,15 @@ module V1
 
     def set_todo
       @todo = Todo.find(params[:todo_id])
+      todo_owner
     end
 
     def set_todo_item
       @item = @todo.items.find_by!(id: params[:id]) if @todo
+    end
+
+    def todo_owner
+      raise(ExceptionHandler::MissingToken, Message.missing_token) unless @todo.created_by == current_user.id.to_s
     end
   end
 end
