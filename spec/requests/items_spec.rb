@@ -122,7 +122,7 @@ RSpec.describe 'Items API' do
     end
   end
 
-  describe 'DELETE /todos/:id' do
+  describe 'DELETE /todos/:id/items/:id' do
     include Docs::V1::Items::Destroy
     before { delete "/todos/#{todo_id}/items/#{id}", params: {}, headers: headers }
 

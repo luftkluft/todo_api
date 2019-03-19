@@ -8,6 +8,7 @@ module V1
     end
 
     def show
+      authorize @todo, :show?
       json_response(@todo)
     end
 
@@ -17,11 +18,13 @@ module V1
     end
 
     def update
+      authorize @todo, :update?
       @todo.update(todo_params)
       head :no_content
     end
 
     def destroy
+      authorize @todo, :destroy?
       @todo.destroy
       head :no_content
     end
@@ -34,11 +37,6 @@ module V1
 
     def set_todo
       @todo = Todo.find(params[:id])
-      todo_owner
-    end
-
-    def todo_owner
-      raise(ExceptionHandler::MissingToken, Message.missing_token) unless @todo.created_by == current_user.id.to_s
     end
   end
 end

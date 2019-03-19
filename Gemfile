@@ -8,6 +8,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faker'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
+gem 'pundit'
 gem 'rails', '~> 5.2.2'
 gem 'jwt'
 gem 'will_paginate', '~> 3.1.0'
@@ -23,7 +24,8 @@ group :test do
   gem 'coveralls', require: false
   gem 'database_cleaner'
   gem 'dox', require: false
-  gem "factory_bot_rails", "~> 4.0"
+  gem 'factory_bot_rails', '~> 4.0'
+  gem 'pundit-matchers', '~> 1.6.0'
   gem 'shoulda-matchers', '~> 3.1'
 end
 
