@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe AuthorizeApiRequest do
+  INVALID_TOKEN = /Invalid token/.freeze
+  SIGNATURE_HAS_EXPIRED = /Signature has expired/.freeze
+  SEGMENTS_ERROR = /Not enough or too many segments/.freeze
   let(:user) { create(:user) }
   let(:header) { { 'Authorization' => token_generator(user.id) } }
   subject(:invalid_request_obj) { described_class.new({}) }
@@ -18,7 +21,7 @@ RSpec.describe AuthorizeApiRequest do
       context 'when missing token' do
         it 'raises a MissingToken error' do
           expect { invalid_request_obj.call }
-            .to raise_error(ExceptionHandler::MissingToken, 'Missing token')
+            .to raise_error(ExceptionHandler::MissingToken, I18n.t('missing_token'))
         end
       end
 
@@ -29,7 +32,7 @@ RSpec.describe AuthorizeApiRequest do
 
         it 'raises an InvalidToken error' do
           expect { invalid_request_obj.call }
-            .to raise_error(ExceptionHandler::InvalidToken, /Invalid token/)
+            .to raise_error(ExceptionHandler::InvalidToken, INVALID_TOKEN)
         end
       end
 
@@ -41,7 +44,7 @@ RSpec.describe AuthorizeApiRequest do
           expect { request_obj.call }
             .to raise_error(
               ExceptionHandler::InvalidToken,
-              /Signature has expired/
+              SIGNATURE_HAS_EXPIRED
             )
         end
       end
@@ -54,7 +57,7 @@ RSpec.describe AuthorizeApiRequest do
           expect { invalid_request_obj.call }
             .to raise_error(
               ExceptionHandler::InvalidToken,
-              /Not enough or too many segments/
+              SEGMENTS_ERROR
             )
         end
       end

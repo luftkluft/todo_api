@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'Items API' do
+  COULDN_NOT_FIND_TODO = /Couldn't find Todo/.freeze
+  COULDN_NOT_FIND_ITEM = /Couldn't find Item/.freeze
+  NAME_CANT_BE_BLANK = /Validation failed: Name can't be blank/.freeze
   include Docs::V1::Items::Api
   let(:user) { create(:user) }
   let!(:todo) { create(:todo, created_by: user.id) }
@@ -31,7 +34,7 @@ RSpec.describe 'Items API' do
       end
 
       it 'returns a not found message', :dox do
-        expect(response.body).to match(/Couldn't find Todo/)
+        expect(response.body).to match(COULDN_NOT_FIND_TODO)
       end
     end
   end
@@ -58,7 +61,7 @@ RSpec.describe 'Items API' do
       end
 
       it 'returns a not found message', :dox do
-        expect(response.body).to match(/Couldn't find Item/)
+        expect(response.body).to match(COULDN_NOT_FIND_ITEM)
       end
     end
   end
@@ -85,7 +88,7 @@ RSpec.describe 'Items API' do
       end
 
       it 'returns a failure message', :dox do
-        expect(response.body).to match(/Validation failed: Name can't be blank/)
+        expect(response.body).to match(NAME_CANT_BE_BLANK)
       end
     end
   end
@@ -117,7 +120,7 @@ RSpec.describe 'Items API' do
       end
 
       it 'returns a not found message', :dox do
-        expect(response.body).to match(/Couldn't find Item/)
+        expect(response.body).to match(COULDN_NOT_FIND_ITEM)
       end
     end
   end

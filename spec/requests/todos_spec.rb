@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Todos API', type: :request do
+  COULDN_NOT_FIND_TODO = /Couldn't find Todo/.freeze
+  TITLE_CANT_BE_BLANK =  /Validation failed: Title can't be blank/.freeze
   include Docs::V1::Todos::Api
   let(:user) { create(:user) }
   let!(:todos) { create_list(:todo, 10, created_by: user.id) }
@@ -44,7 +46,7 @@ RSpec.describe 'Todos API', type: :request do
       end
 
       it 'returns a not found message', :dox do
-        expect(response.body).to match(/Couldn't find Todo/)
+        expect(response.body).to match(COULDN_NOT_FIND_TODO)
       end
     end
   end
@@ -77,7 +79,7 @@ RSpec.describe 'Todos API', type: :request do
 
       it 'returns a validation failure message', :dox do
         expect(json['message'])
-          .to match(/Validation failed: Title can't be blank/)
+          .to match(TITLE_CANT_BE_BLANK)
       end
     end
   end

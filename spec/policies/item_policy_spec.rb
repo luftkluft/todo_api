@@ -19,8 +19,8 @@ RSpec.describe TodoPolicy do
       expect(response).to have_http_status(204)
     end
 
-    it "denies access if user not owner" do
-      expect {delete "/todos/#{second_todo_id}/items/#{second_id}", params: {}, headers: headers}
+    it 'denies access if user not owner' do
+      expect { delete "/todos/#{second_todo_id}/items/#{second_id}", params: {}, headers: headers }
         .to raise_error(Pundit::NotAuthorizedError)
     end
 

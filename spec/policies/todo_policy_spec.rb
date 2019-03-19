@@ -8,12 +8,11 @@ RSpec.describe TodoPolicy do
   subject { described_class.new(user, todos.first) }
 
   describe 'Todos', type: :request do
-    it "denies access if user not owner" do
-      todos = second_todos
-      expect {delete "/todos/#{todo_id + 1}", params: {}, headers: headers}.to raise_error(Pundit::NotAuthorizedError)
+    it 'denies access if user not owner' do
+      expect { delete "/todos/#{todo_id + 1}", params: {}, headers: headers }.to raise_error(Pundit::NotAuthorizedError)
     end
 
-    it "grants access if user is owner" do
+    it 'grants access if user is owner' do
       delete "/todos/#{todo_id}", params: {}, headers: headers
       expect(response).to have_http_status(204)
     end

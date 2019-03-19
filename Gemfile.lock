@@ -242,6 +242,7 @@ DEPENDENCIES
   factory_bot_rails (~> 4.0)
   faker
   fasterer
+  i18n
   jwt
   listen (~> 3.0.5)
   pg (>= 0.18, < 2.0)
