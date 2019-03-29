@@ -25,6 +25,6 @@ class TodoPolicy
   private
 
   def authorize_user
-    @todo.created_by == @user.id.to_s
+    @todo.user_id == @user.id
   end
 end

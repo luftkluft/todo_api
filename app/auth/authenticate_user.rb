@@ -10,12 +10,10 @@ class AuthenticateUser
 
   private
 
-  attr_reader :email, :password
-
   def user
-    user = User.find_by(email: email)
-    return user if user&.authenticate(password)
+    user = User.find_by(email: @email)
+    return user if user&.authenticate(@password)
 
-    raise(ExceptionHandler::AuthenticationError, Message.invalid_credentials)
+    raise(ExceptionHandler::AuthenticationError, I18n.t('invalid_credentials'))
   end
 end

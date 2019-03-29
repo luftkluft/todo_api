@@ -1,4 +1,6 @@
 require 'spec_helper'
+require 'coveralls'
+Coveralls.wear!
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 abort('The Rails environment is running in production mode!') if Rails.env.production?
@@ -11,13 +13,6 @@ begin
 rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
-end
-
-Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    with.test_framework :rspec
-    with.library :rails
-  end
 end
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
@@ -47,10 +42,4 @@ RSpec.configure do |config|
     example.metadata[:request] = request
     example.metadata[:response] = response
   end
-end
-
-Dox.configure do |config|
-  config.header_file_path = Rails.root.join('spec/docs/v1/descriptions/header.md')
-  config.desc_folder_path = Rails.root.join('spec/docs/v1/descriptions')
-  config.headers_whitelist = ['Accept', 'X-Auth-Token']
 end

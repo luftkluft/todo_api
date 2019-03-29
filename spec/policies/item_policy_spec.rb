@@ -1,12 +1,12 @@
 RSpec.describe TodoPolicy do
-  let(:user) { create(:user) }
-  let!(:todo) { create(:todo, created_by: user.id) }
+  let!(:user) { create(:user) }
+  let!(:todo) { create(:todo, user_id: user.id) }
   let!(:items) { create_list(:item, 10, todo_id: todo.id) }
   let(:todo_id) { todo.id }
   let(:id) { items.first.id }
   let(:headers) { valid_headers }
-
-  let!(:second_todo) { create(:todo, created_by: (user.id + 1)) }
+  let!(:user2) { create(:user, id: 1000) }
+  let!(:second_todo) { create(:todo, user_id: 1000) }
   let!(:second_items) { create_list(:item, 10, todo_id: second_todo.id) }
   let(:second_todo_id) { second_todo.id }
   let(:second_id) { second_items.first.id }

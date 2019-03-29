@@ -11,7 +11,7 @@ RSpec.describe 'Users API', type: :request do
   describe 'POST /signup' do
     include Docs::V1::Users::Create
     context 'when valid request' do
-      before { post '/signup', params: valid_attributes.to_json, headers: headers }
+      before { post signup_path, params: valid_attributes.to_json, headers: headers }
 
       it 'creates a new user', :dox do
         expect(response).to have_http_status(201)
@@ -27,7 +27,7 @@ RSpec.describe 'Users API', type: :request do
     end
 
     context 'when invalid request' do
-      before { post '/signup', params: {}, headers: headers }
+      before { post signup_path, params: {}, headers: headers }
 
       it 'does not create a new user', :dox do
         expect(response).to have_http_status(422)

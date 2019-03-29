@@ -12,18 +12,27 @@ module V1
     end
 
     def create
-      @todo.items.create!(item_params)
-      json_response(@todo, :created)
+      if @todo.items.create!(item_params)
+        json_response(@todo, :created)
+      else
+        raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_created'))
+      end
     end
 
     def update
-      @item.update(item_params)
-      head :no_content
+      if @item.update(item_params)
+        head :no_content
+      else
+        raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_updated'))
+      end
     end
 
     def destroy
-      @item.destroy
-      head :no_content
+      if @item.destroy
+        head :no_content
+      else
+        raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_deleted'))
+      end
     end
 
     private
@@ -38,7 +47,7 @@ module V1
     end
 
     def set_todo_item
-      @item = @todo.items.find_by!(id: params[:id]) if @todo
+      @item = @todo.items.find(params[:id]) if @todo
     end
   end
 end

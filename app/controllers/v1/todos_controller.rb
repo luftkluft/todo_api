@@ -13,20 +13,29 @@ module V1
     end
 
     def create
-      @todo = current_user.todos.create!(todo_params)
-      json_response(@todo, :created)
+      if @todo = current_user.todos.create!(todo_params)
+        json_response(@todo, :created)
+      else
+        raise(ExceptionHandler::MissingToken, I18n.t('controller.todo_not_created'))
+      end
     end
 
     def update
       authorize @todo, :update?
-      @todo.update(todo_params)
-      head :no_content
+      if @todo.update(todo_params)
+        head :no_content
+      else
+        raise(ExceptionHandler::MissingToken, I18n.t('controller.todo_not_updated'))
+      end
     end
 
     def destroy
       authorize @todo, :destroy?
-      @todo.destroy
-      head :no_content
+      if @todo.destroy
+        head :no_content
+      else
+        raise(ExceptionHandler::MissingToken, I18n.t('controller.todo_not_deleted'))
+      end
     end
 
     private
