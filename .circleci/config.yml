@@ -13,7 +13,7 @@ jobs:
           PG_USER: username
           RAILS_ENV: test
           RACK_ENV: test
-      - image: circleci/postgres:9.6
+      - image: circleci/postgres:11
         environment:
           POSTGRES_USER: username
           POSTGRES_PASSWORD: password
