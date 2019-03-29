@@ -11,7 +11,7 @@ RSpec.describe 'Items API' do
 
   describe 'GET /todos/:todo_id/items' do
     include Docs::V1::Items::Index
-    before { get "/todos/#{todo_id}/items", params: {}, headers: headers }
+    before { get todo_items_path(todo_id: todo_id), params: {}, headers: headers }
 
     context 'when todo exists' do
       it 'returns status code 200', :dox do
@@ -38,7 +38,7 @@ RSpec.describe 'Items API' do
 
   describe 'GET /todos/:todo_id/items/:id' do
     include Docs::V1::Items::Show
-    before { get "/todos/#{todo_id}/items/#{id}", params: {}, headers: headers }
+    before { get todo_item_path(todo_id: todo_id, id: id), params: {}, headers: headers }
 
     context 'when todo item exists' do
       it 'returns status code 200', :dox do
@@ -69,7 +69,7 @@ RSpec.describe 'Items API' do
 
     context 'when request attributes are valid' do
       before do
-        post "/todos/#{todo_id}/items", params: valid_attributes, headers: headers
+        post todo_items_path(todo_id: todo_id), params: valid_attributes, headers: headers
       end
 
       it 'returns status code 201', :dox do
@@ -78,7 +78,7 @@ RSpec.describe 'Items API' do
     end
 
     context 'when an invalid request' do
-      before { post "/todos/#{todo_id}/items", params: {}, headers: headers }
+      before { post todo_items_path(todo_id: todo_id), params: {}, headers: headers }
 
       it 'returns status code 422', :dox do
         expect(response).to have_http_status(422)
@@ -95,7 +95,7 @@ RSpec.describe 'Items API' do
     let(:valid_attributes) { { name: 'Mozart' }.to_json }
 
     before do
-      put "/todos/#{todo_id}/items/#{id}", params: valid_attributes, headers: headers
+      put todo_item_path(todo_id: todo_id, id: id), params: valid_attributes, headers: headers
     end
 
     context 'when item exists' do
@@ -124,7 +124,7 @@ RSpec.describe 'Items API' do
 
   describe 'DELETE /todos/:id/items/:id' do
     include Docs::V1::Items::Destroy
-    before { delete "/todos/#{todo_id}/items/#{id}", params: {}, headers: headers }
+    before { delete todo_item_path(todo_id: todo_id, id: id), params: {}, headers: headers }
 
     it 'returns status code 204', :dox do
       expect(response).to have_http_status(204)
