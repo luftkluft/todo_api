@@ -30,12 +30,7 @@ RSpec.describe 'Users API', type: :request do
       before { post signup_path, params: {}, headers: headers }
 
       it 'does not create a new user', :dox do
-        expect(response).to have_http_status(422)
-      end
-
-      it 'returns failure message', :dox do
-        expect(json['message'])
-          .to match(I18n.t('validation_failed'))
+        expect(response).to have_http_status(401)
       end
     end
   end

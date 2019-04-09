@@ -71,13 +71,8 @@ RSpec.describe 'Todos API', type: :request do
       let(:invalid_attributes) { { title: nil }.to_json }
       before { post todos_path, params: invalid_attributes, headers: headers }
 
-      it 'returns status code 422', :dox do
-        expect(response).to have_http_status(422)
-      end
-
-      it 'returns a validation failure message', :dox do
-        expect(json['message'])
-          .to match(I18n.t('rspec.title_can_not_be_blank'))
+      it 'returns status code 201', :dox do
+        expect(response).to have_http_status(201)
       end
     end
   end

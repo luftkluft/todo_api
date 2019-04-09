@@ -1,8 +1,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: username
-  password: password
+  username: Rails.application.credentials.username
+  password: Rails.application.credentials.password
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
@@ -11,7 +11,12 @@ development:
   database: todo_api_develop
 
 test:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  username: 'username'
+  password: 'password'
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
   database: todo_api_test
 
 production:

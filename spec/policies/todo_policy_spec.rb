@@ -6,7 +6,7 @@ RSpec.describe TodoPolicy do
   let(:todo_id) { todos.last.id }
   let(:headers) { valid_headers }
 
-  subject { described_class.new(user, todos.first) }
+  subject { described_class.new(user, todos.last) }
 
   describe 'Todos', type: :request do
     it 'denies access if user not owner' do
@@ -18,6 +18,6 @@ RSpec.describe TodoPolicy do
       expect(response).to have_http_status(204)
     end
 
-    it { is_expected.to permit_actions(%i[show update destroy]) }
+    it { is_expected.to permit_actions(%i[user_auth]) }
   end
 end

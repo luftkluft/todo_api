@@ -24,6 +24,6 @@ RSpec.describe TodoPolicy do
         .to raise_error(Pundit::NotAuthorizedError)
     end
 
-    it { is_expected.to permit_actions(%i[user_todo]) }
+    it { is_expected.to permit_actions(%i[user_auth]) }
   end
 end

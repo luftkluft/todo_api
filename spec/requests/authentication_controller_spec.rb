@@ -21,7 +21,6 @@ RSpec.describe 'Authentication', type: :request do
 
     context 'When request is valid' do
       before { post auth_login_path, params: valid_credentials, headers: headers }
-
       it 'returns an authentication token', :dox do
         expect(json['auth_token']).not_to be_nil
       end

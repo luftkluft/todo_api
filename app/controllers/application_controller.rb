@@ -9,6 +9,8 @@ class ApplicationController < ActionController::API
   private
 
   def authorize_request
-    @current_user = AuthorizeApiRequest.new(request.headers).call[:user]
+    @current_user = AuthorizeApiRequest.new(request.headers).call
+    TodoPolicy.new(@current_user, request)
+    @current_user
   end
 end
