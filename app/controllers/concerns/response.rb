@@ -1,4 +1,3 @@
-# require 'active_support/concern'
 module Response
   extend ActiveSupport::Concern
   included do
