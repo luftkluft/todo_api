@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  # require 'active_support/concern'
   include Pundit
   include Response
   include ExceptionHandler
