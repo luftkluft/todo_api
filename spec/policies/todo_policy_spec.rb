@@ -11,8 +11,6 @@ RSpec.describe TodoPolicy, type: :policy do
   subject { described_class.new(user, todos.last) }
 
   describe 'request', type: :request do
-    it { is_expected.to permit_actions(%i[user_auth]) }
-
     it 'denies access if user not owner' do
       expect { delete "/todos/#{todo_id + 1}", params: {}, headers: headers }.to raise_error(Pundit::NotAuthorizedError)
     end
@@ -20,6 +18,18 @@ RSpec.describe TodoPolicy, type: :policy do
     it 'grants access if user is owner' do
       delete "/todos/#{todo_id}", params: {}, headers: headers
       expect(response).to have_http_status(204)
+    end
+  end
+
+  subject { described_class }
+
+  permissions :user_auth? do
+    it 'denies access if user not owner' do
+      expect(subject).not_to permit(user, second_todos.last)
+    end
+
+    it 'grants access if user is owner' do
+      expect(subject).to permit(user, todos.last)
     end
   end
 end

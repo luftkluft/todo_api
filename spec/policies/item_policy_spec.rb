@@ -16,8 +16,6 @@ RSpec.describe ItemPolicy, type: :policy do
   subject { described_class.new(user, todo) }
 
   describe 'request', type: :request do
-    it { is_expected.to permit_actions(%i[user_auth]) }
-
     it 'grants access if user is owner' do
       delete "/todos/#{todo_id}/items/#{id}", params: {}, headers: headers
       expect(response).to have_http_status(204)
@@ -26,6 +24,18 @@ RSpec.describe ItemPolicy, type: :policy do
     it 'denies access if user not owner' do
       expect { delete "/todos/#{second_todo_id}/items/#{second_id}", params: {}, headers: headers }
         .to raise_error(Pundit::NotAuthorizedError)
+    end
+  end
+
+  subject { described_class }
+
+  permissions :user_auth? do
+    it 'denies access if user not owner' do
+      expect(subject).not_to permit(user, second_todo)
+    end
+
+    it 'grants access if user is owner' do
+      expect(subject).to permit(user, todo)
     end
   end
 end
