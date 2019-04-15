@@ -1,4 +1,6 @@
-RSpec.describe TodoPolicy do
+require 'rails_helper'
+
+RSpec.describe ItemPolicy, type: :policy do
   let!(:user) { create(:user) }
   let!(:todo) { create(:todo, user_id: user.id) }
   let!(:items) { create_list(:item, 10, todo_id: todo.id) }
@@ -13,7 +15,9 @@ RSpec.describe TodoPolicy do
 
   subject { described_class.new(user, todo) }
 
-  describe 'Items', type: :request do
+  describe 'request', type: :request do
+    it { is_expected.to permit_actions(%i[user_auth]) }
+
     it 'grants access if user is owner' do
       delete "/todos/#{todo_id}/items/#{id}", params: {}, headers: headers
       expect(response).to have_http_status(204)
@@ -23,7 +27,5 @@ RSpec.describe TodoPolicy do
       expect { delete "/todos/#{second_todo_id}/items/#{second_id}", params: {}, headers: headers }
         .to raise_error(Pundit::NotAuthorizedError)
     end
-
-    it { is_expected.to permit_actions(%i[user_auth]) }
   end
 end

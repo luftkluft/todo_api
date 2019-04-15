@@ -127,6 +127,7 @@ GEM
     pundit-matchers (1.6.0)
       rspec-rails (>= 3.0.0)
     rack (2.0.6)
+    rack-cors (1.0.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.2)
@@ -252,6 +253,7 @@ DEPENDENCIES
   puma (~> 3.11)
   pundit
   pundit-matchers (~> 1.6.0)
+  rack-cors
   rails (~> 5.2.2)
   rails_12factor
   rspec-rails (~> 3.5)

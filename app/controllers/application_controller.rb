@@ -10,7 +10,5 @@ class ApplicationController < ActionController::API
 
   def authorize_request
     @current_user = AuthorizeApiRequest.new(request.headers).call
-    TodoPolicy.new(@current_user, request)
-    @current_user
   end
 end
