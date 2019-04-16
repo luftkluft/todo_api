@@ -20,3 +20,6 @@ en:
     todo_not_created: "Todo not be created"
     todo_not_updated: "Todo not be updated"
     todo_not_deleted: "Todo not be deleted"
+    comment_not_created: "Comment not be created"
+    comment_not_updated: "Comment not be updated"
+    comment_not_deleted: "Comment not be deleted"
