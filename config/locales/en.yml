@@ -23,3 +23,5 @@ en:
     comment_not_created: "Comment not be created"
     comment_not_updated: "Comment not be updated"
     comment_not_deleted: "Comment not be deleted"
+  errors:
+    deadline_not_valid: "Deadline can't be in the past!"

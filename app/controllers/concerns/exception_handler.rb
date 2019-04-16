@@ -5,6 +5,7 @@ module ExceptionHandler
   class MissingToken < StandardError; end
   class InvalidToken < StandardError; end
   class InvalidOperation < StandardError; end
+  class InvalidDeadline < StandardError; end
 
   included do
     rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_response
@@ -12,6 +13,7 @@ module ExceptionHandler
     rescue_from ExceptionHandler::MissingToken, with: :unprocessable_response
     rescue_from ExceptionHandler::InvalidToken, with: :unprocessable_response
     rescue_from ExceptionHandler::InvalidOperation, with: :unprocessable_response
+    rescue_from ExceptionHandler::InvalidDeadline, with: :invalid_deadline_response
 
     rescue_from ActiveRecord::RecordNotFound do |exception|
       json_response({ message: exception.message }, :not_found)
@@ -19,6 +21,10 @@ module ExceptionHandler
   end
 
   private
+
+  def invalid_deadline_response(exception)
+    json_response({ message: exception.message }, :invalid_deadline)
+  end
 
   def unprocessable_response(exception)
     json_response({ message: exception.message }, :unprocessable_entity)

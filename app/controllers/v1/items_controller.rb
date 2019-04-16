@@ -43,7 +43,7 @@ module V1
     end
 
     def item_params
-      params.permit(:name, :done)
+      params.permit(:name, :done, :deadline)
     end
 
     def set_todo

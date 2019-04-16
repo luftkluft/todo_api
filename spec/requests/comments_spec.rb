@@ -5,7 +5,7 @@ RSpec.describe 'Comments API' do
   let(:user) { create(:user) }
   let!(:todo) { create(:todo, user_id: user.id) }
   let(:todo_id) { todo.id }
-  let!(:item) { create(:item, :with_comment, todo_id: todo.id ) }
+  let!(:item) { create(:item, :with_comment, todo_id: todo.id) }
   let(:item_id) { item.id }
   let(:headers) { valid_headers }
 
