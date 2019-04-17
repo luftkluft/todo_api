@@ -62,7 +62,7 @@ module V1
     def comments
       comments = []
       @todo.items.each do |item|
-        comments << item.comments.first
+        comments.push(Comment.find_by(item_id: item.id))
       end
       comments
     end
