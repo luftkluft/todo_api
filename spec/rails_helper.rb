@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'coveralls'
 Coveralls.wear!
 ENV['RAILS_ENV'] ||= 'test'

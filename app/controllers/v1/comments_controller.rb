@@ -23,7 +23,7 @@ module V1
 
     def update
       if @comment.update(comment_params)
-        head :no_content
+        json_response(@comment)
       else
         raise(ExceptionHandler::MissingToken, I18n.t('controller.comment_not_updated'))
       end
@@ -56,7 +56,7 @@ module V1
     end
 
     def set_comment
-      @comment = Comment.find_by(item_id: params[:item_id]) if @todo
+      @comment = Comment.where(item: @todo.items).first if @todo
     end
 
     def comments

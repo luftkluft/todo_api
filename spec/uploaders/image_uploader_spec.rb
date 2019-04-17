@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe ImageUploader do
   let(:user) { create(:user) }
   let!(:todo) { create(:todo, user_id: user.id) }

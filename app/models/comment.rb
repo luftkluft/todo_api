@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  VALID_BODY_LENGTH_RANGE = (0..256).freeze
+  VALID_BODY_LENGTH_RANGE = (5..256).freeze
   mount_uploader :image, ImageUploader
   belongs_to :item
   validates :body,

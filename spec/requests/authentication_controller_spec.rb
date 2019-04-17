@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe 'Authentication', type: :request do
   include Docs::V1::Users::Api
   describe 'POST /auth/login' do

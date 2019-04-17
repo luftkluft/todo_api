@@ -1,13 +1,11 @@
-require 'rails_helper'
-
 RSpec.describe AuthorizeApiRequest do
   INVALID_TOKEN = /Invalid token/.freeze
   SIGNATURE_HAS_EXPIRED = /Signature has expired/.freeze
   SEGMENTS_ERROR = /Not enough or too many segments/.freeze
   let(:user) { create(:user) }
   let(:header) { { 'Authorization' => token_generator(user.id) } }
-  subject(:invalid_request_obj) { described_class.new({}) }
-  subject(:request_obj) { described_class.new(header) }
+  let(:invalid_request_obj) { described_class.new({}) }
+  let(:request_obj) { described_class.new(header) }
 
   describe '#call' do
     context 'when valid request' do

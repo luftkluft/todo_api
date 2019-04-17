@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe 'Items API' do
   include Docs::V1::Items::Api
   let(:user) { create(:user) }

@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe 'Users API', type: :request do
   include Docs::V1::Users::Api
   let(:user) { build(:user) }

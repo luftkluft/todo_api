@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe 'Todos API', type: :request do
   include Docs::V1::Todos::Api
   let(:user) { create(:user) }
