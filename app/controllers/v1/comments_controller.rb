@@ -1,7 +1,6 @@
 module V1
   class CommentsController < ApplicationController
     before_action :set_todo
-    before_action :user_auth
     before_action :set_item, only: %i[create]
     before_action :set_comment, only: %i[show update destroy]
 
@@ -39,16 +38,13 @@ module V1
 
     private
 
-    def user_auth
-      authorize @todo, :user_auth?
-    end
-
     def comment_params
       params.permit(:body, :image)
     end
 
     def set_todo
       @todo = Todo.find(params[:todo_id])
+      authorize @todo, :user_auth?
     end
 
     def set_item

@@ -7,23 +7,23 @@ class ApplicationPolicy
   end
 
   def index?
-    false
+    authorize_user
   end
 
   def show?
-    false
+    authorize_user
   end
 
   def create?
-    false
+    authorize_user
   end
 
   def new?
-    create?
+    authorize_user
   end
 
   def update?
-    false
+    authorize_user
   end
 
   def edit?
@@ -31,7 +31,7 @@ class ApplicationPolicy
   end
 
   def destroy?
-    false
+    authorize_user
   end
 
   class Scope

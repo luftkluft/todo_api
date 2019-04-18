@@ -1,7 +1,6 @@
 module V1
   class TodosController < ApplicationController
     before_action :set_todo, only: %i[show update destroy]
-    before_action :user_auth, only: %i[show update destroy]
 
     def index
       @todos = current_user.todos.paginate(page: params[:page], per_page: 20)
@@ -38,16 +37,13 @@ module V1
 
     private
 
-    def user_auth
-      authorize @todo, :user_auth?
-    end
-
     def todo_params
       params.permit(:title)
     end
 
     def set_todo
       @todo = Todo.find(params[:id])
+      authorize @todo, :user_auth?
     end
   end
 end

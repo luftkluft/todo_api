@@ -1,7 +1,6 @@
 module V1
   class ItemsController < ApplicationController
     before_action :set_todo
-    before_action :user_auth
     before_action :set_todo_item, only: %i[show update destroy]
 
     def index
@@ -38,16 +37,13 @@ module V1
 
     private
 
-    def user_auth
-      authorize @todo, :user_auth?
-    end
-
     def item_params
       params.permit(:name, :done, :deadline)
     end
 
     def set_todo
       @todo = Todo.find(params[:todo_id])
+      authorize @todo, :user_auth?
     end
 
     def set_todo_item
