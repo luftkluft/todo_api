@@ -44,7 +44,7 @@ module V1
 
     def set_todo
       @todo = Todo.find(params[:todo_id])
-      authorize @todo, :user_auth?
+      authorize @todo
     end
 
     def set_item

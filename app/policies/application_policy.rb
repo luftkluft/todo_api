@@ -34,23 +34,6 @@ class ApplicationPolicy
     authorize_user
   end
 
-  class Scope
-    attr_reader :user, :scope
-
-    def initialize(user, scope)
-      @user = user
-      @scope = scope
-    end
-
-    def resolve
-      scope.all
-    end
-  end
-
-  def user_auth?
-    authorize_user
-  end
-
   private
 
   def authorize_user

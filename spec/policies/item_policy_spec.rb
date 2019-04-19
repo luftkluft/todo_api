@@ -6,7 +6,7 @@ RSpec.describe ItemPolicy, type: :policy do
 
   subject { described_class }
 
-  permissions :user_auth? do
+  permissions :index?, :show?, :create?, :new?, :update?, :edit?, :destroy? do
     it 'denies access if user not owner' do
       expect(subject).not_to permit(user, second_todo)
     end
