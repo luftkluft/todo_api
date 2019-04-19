@@ -93,8 +93,8 @@ RSpec.describe 'Items API' do
     end
 
     context 'when item exists' do
-      it 'returns status code 204', :dox do
-        expect(response).to have_http_status(204)
+      it 'returns status code 200', :dox do
+        expect(response).to have_http_status(200)
       end
 
       it 'updates the item', :dox do

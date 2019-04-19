@@ -21,7 +21,7 @@ module V1
 
     def update
       if @todo.update(todo_params)
-        head :no_content
+        json_response(@todo)
       else
         raise(ExceptionHandler::InvalidOperation, I18n.t('controller.todo_not_updated'))
       end

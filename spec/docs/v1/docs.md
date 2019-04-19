@@ -20,7 +20,7 @@
     + Body
 
             {
-              "email": "whitneykris@leannongrant.info",
+              "email": "florrie@macgyver.co",
               "password": "foobar"
             }
 
@@ -33,7 +33,7 @@
     + Body
 
             {
-              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NTU1Mzg0NjZ9.VOBGDuA5ZQCumrAOEF_WVaTC25SlrV2w-0Fzo0KVaKg"
+              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NTU3NjEwNTF9.iJ28Xypo8QkmrnoDh4HuAzMUEbOmJRVXUX17fomvwD4"
             }
 
 + Request returns a failure message
@@ -47,8 +47,8 @@
     + Body
 
             {
-              "email": "conrad@kemmer.io",
-              "password": "Y8H4GwOaA"
+              "email": "gay@mueller.biz",
+              "password": "405pA2Y312S4"
             }
 
 + Response 401
@@ -77,8 +77,8 @@
     + Body
 
             {
-              "name": "Dewey Fahey",
-              "email": "lavette@kuhndonnelly.net",
+              "name": "Joni Gulgowski",
+              "email": "christenajohnston@kozey.io",
               "password": "foobar",
               "password_confirmation": "foobar"
             }
@@ -93,7 +93,7 @@
 
             {
               "message": "Account created successfully",
-              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozNywiZXhwIjoxNTU1NTM4NDY4fQ.ZyLFJVfyb0qYALouXJ_qTO7i95ga0T1pGJJAeWE6wgI"
+              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozNiwiZXhwIjoxNTU1NzYxMDUyfQ._d_iJHWxQiSSka3FubMzMBHhfHv-j5tZGl7V2MfQxxo"
             }
 
 + Request returns success message
@@ -107,8 +107,8 @@
     + Body
 
             {
-              "name": "Miss Quyen Gibson",
-              "email": "reynalda@quitzon.io",
+              "name": "Candace Gusikowski",
+              "email": "hueyjaskolski@cruickshankjenkins.co",
               "password": "foobar",
               "password_confirmation": "foobar"
             }
@@ -123,7 +123,7 @@
 
             {
               "message": "Account created successfully",
-              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozOCwiZXhwIjoxNTU1NTM4NDY4fQ.9Rxf_mRY55YukFuUK5vyK9WjtlM1BgHOKLSE6Hl494c"
+              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozNywiZXhwIjoxNTU1NzYxMDUyfQ.nsg60tHXphCSD9YvMg4I-wp3V1qS4o3FQ2g5GvLkixM"
             }
 
 + Request returns an authentication token
@@ -137,8 +137,8 @@
     + Body
 
             {
-              "name": "Joanne Doyle II",
-              "email": "leontineyost@homenick.io",
+              "name": "Val Torphy",
+              "email": "ezekielhickle@dach.org",
               "password": "foobar",
               "password_confirmation": "foobar"
             }
@@ -153,7 +153,7 @@
 
             {
               "message": "Account created successfully",
-              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozOSwiZXhwIjoxNTU1NTM4NDY4fQ.9nY1vaoTRKbJZoTRhn_nPdwRhu6d9S0Cd0ekKFULXSk"
+              "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozOCwiZXhwIjoxNTU1NzYxMDUyfQ.ivnmC3PtywMRc6i5KtkqP7YFGgUw_XFz2gkVsxARz3g"
             }
 
 + Request does not create a new user
@@ -204,7 +204,7 @@
             [
               {
                 "id": 1,
-                "body": "Anakin Skywalker",
+                "body": "Obi-Wan Kenobitest",
                 "image": {
                   "url": null,
                   "thumb": {
@@ -212,16 +212,16 @@
                   }
                 },
                 "item_id": 1,
-                "created_at": "2019-04-16T22:01:06.910Z",
-                "updated_at": "2019-04-16T22:01:06.910Z",
+                "created_at": "2019-04-19T11:50:51.629Z",
+                "updated_at": "2019-04-19T11:50:51.629Z",
                 "item": {
                   "id": 1,
-                  "name": "Kanan Jarrus",
+                  "name": "Maz Kanata",
                   "done": false,
                   "todo_id": 1,
-                  "deadline": "2019-04-23T22:01:06.898Z",
-                  "created_at": "2019-04-16T22:01:06.900Z",
-                  "updated_at": "2019-04-16T22:01:06.900Z"
+                  "deadline": "2019-04-26T11:50:51.618Z",
+                  "created_at": "2019-04-19T11:50:51.620Z",
+                  "updated_at": "2019-04-19T11:50:51.620Z"
                 }
               }
             ]
@@ -251,7 +251,7 @@
 
             {
               "id": 2,
-              "body": "Count Dooku",
+              "body": "Sebulbatest",
               "image": {
                 "url": null,
                 "thumb": {
@@ -259,16 +259,16 @@
                 }
               },
               "item_id": 2,
-              "created_at": "2019-04-16T22:01:06.947Z",
-              "updated_at": "2019-04-16T22:01:06.947Z",
+              "created_at": "2019-04-19T11:50:51.666Z",
+              "updated_at": "2019-04-19T11:50:51.666Z",
               "item": {
                 "id": 2,
-                "name": "Anakin Skywalker",
+                "name": "Vice Admiral Holdo",
                 "done": false,
                 "todo_id": 2,
-                "deadline": "2019-04-23T22:01:06.944Z",
-                "created_at": "2019-04-16T22:01:06.945Z",
-                "updated_at": "2019-04-16T22:01:06.945Z"
+                "deadline": "2019-04-26T11:50:51.663Z",
+                "created_at": "2019-04-19T11:50:51.665Z",
+                "updated_at": "2019-04-19T11:50:51.665Z"
               }
             }
 
@@ -302,18 +302,18 @@
 
             {
               "id": 3,
-              "name": "Lando Calrissian",
+              "name": "Jyn Erso",
               "done": false,
               "todo_id": 3,
-              "deadline": "2019-04-23T22:01:06.962Z",
-              "created_at": "2019-04-16T22:01:06.963Z",
-              "updated_at": "2019-04-16T22:01:06.963Z",
+              "deadline": "2019-04-26T11:50:51.681Z",
+              "created_at": "2019-04-19T11:50:51.682Z",
+              "updated_at": "2019-04-19T11:50:51.682Z",
               "todo": {
                 "id": 3,
-                "title": "ipsam",
+                "title": "suscipit",
                 "user_id": 5,
-                "created_at": "2019-04-16T22:01:06.961Z",
-                "updated_at": "2019-04-16T22:01:06.961Z"
+                "created_at": "2019-04-19T11:50:51.680Z",
+                "updated_at": "2019-04-19T11:50:51.680Z"
               }
             }
 
@@ -335,18 +335,18 @@
 
             {
               "id": 4,
-              "name": "Ben Solo",
+              "name": "Count Dooku",
               "done": false,
               "todo_id": 4,
-              "deadline": "2019-04-23T22:01:06.981Z",
-              "created_at": "2019-04-16T22:01:06.982Z",
-              "updated_at": "2019-04-16T22:01:06.982Z",
+              "deadline": "2019-04-26T11:50:51.702Z",
+              "created_at": "2019-04-19T11:50:51.703Z",
+              "updated_at": "2019-04-19T11:50:51.703Z",
               "todo": {
                 "id": 4,
-                "title": "vel",
+                "title": "adipisci",
                 "user_id": 6,
-                "created_at": "2019-04-16T22:01:06.980Z",
-                "updated_at": "2019-04-16T22:01:06.980Z"
+                "created_at": "2019-04-19T11:50:51.701Z",
+                "updated_at": "2019-04-19T11:50:51.701Z"
               }
             }
 
@@ -357,7 +357,7 @@
     + item_id: `5` (number, required)
     + id: `6` (number, required)
 
-+ Request returns status code 204
++ Request returns status code 200
 **PUT**&nbsp;&nbsp;`/todos/5/items/5/comments/6`
 
     + Headers
@@ -371,7 +371,36 @@
               "body": "Mozart"
             }
 
-+ Response 204
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "id": 6,
+              "body": "Mozart",
+              "image": {
+                "url": null,
+                "thumb": {
+                  "url": null
+                }
+              },
+              "item_id": 5,
+              "created_at": "2019-04-19T11:50:51.723Z",
+              "updated_at": "2019-04-19T11:50:51.729Z",
+              "item": {
+                "id": 5,
+                "name": "General Hux",
+                "done": false,
+                "todo_id": 5,
+                "deadline": "2019-04-26T11:50:51.721Z",
+                "created_at": "2019-04-19T11:50:51.722Z",
+                "updated_at": "2019-04-19T11:50:51.722Z"
+              }
+            }
 
 + Request updates the item
 **PUT**&nbsp;&nbsp;`/todos/6/items/6/comments/7`
@@ -387,7 +416,36 @@
               "body": "Mozart"
             }
 
-+ Response 204
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "id": 7,
+              "body": "Mozart",
+              "image": {
+                "url": null,
+                "thumb": {
+                  "url": null
+                }
+              },
+              "item_id": 6,
+              "created_at": "2019-04-19T11:50:51.742Z",
+              "updated_at": "2019-04-19T11:50:51.748Z",
+              "item": {
+                "id": 6,
+                "name": "Shmi Skywalker",
+                "done": false,
+                "todo_id": 6,
+                "deadline": "2019-04-26T11:50:51.739Z",
+                "created_at": "2019-04-19T11:50:51.740Z",
+                "updated_at": "2019-04-19T11:50:51.740Z"
+              }
+            }
 
 ### Delete /todos/:todo_id/items/:item_id/comments/:id [DELETE /todos/{todo_id}/items/{item_id}/comments/{id}]
 
@@ -433,258 +491,258 @@
             [
               {
                 "id": 8,
-                "name": "Kylo Ren",
+                "name": "Darth Vader",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.048Z",
-                "created_at": "2019-04-16T22:01:07.049Z",
-                "updated_at": "2019-04-16T22:01:07.049Z",
+                "deadline": "2019-04-26T11:50:51.775Z",
+                "created_at": "2019-04-19T11:50:51.776Z",
+                "updated_at": "2019-04-19T11:50:51.776Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 9,
-                "name": "Lando Calrissian",
+                "name": "Supreme Leader Snoke",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.050Z",
-                "created_at": "2019-04-16T22:01:07.051Z",
-                "updated_at": "2019-04-16T22:01:07.051Z",
+                "deadline": "2019-04-26T11:50:51.777Z",
+                "created_at": "2019-04-19T11:50:51.778Z",
+                "updated_at": "2019-04-19T11:50:51.778Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 10,
-                "name": "Ahsoka Tano",
+                "name": "Finn",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.052Z",
-                "created_at": "2019-04-16T22:01:07.052Z",
-                "updated_at": "2019-04-16T22:01:07.052Z",
+                "deadline": "2019-04-26T11:50:51.779Z",
+                "created_at": "2019-04-19T11:50:51.780Z",
+                "updated_at": "2019-04-19T11:50:51.780Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 11,
-                "name": "Anakin Skywalker",
+                "name": "Jar Jar Binks",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.053Z",
-                "created_at": "2019-04-16T22:01:07.054Z",
-                "updated_at": "2019-04-16T22:01:07.054Z",
+                "deadline": "2019-04-26T11:50:51.781Z",
+                "created_at": "2019-04-19T11:50:51.782Z",
+                "updated_at": "2019-04-19T11:50:51.782Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 12,
-                "name": "Panaka",
+                "name": "Rose Tico",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.055Z",
-                "created_at": "2019-04-16T22:01:07.056Z",
-                "updated_at": "2019-04-16T22:01:07.056Z",
+                "deadline": "2019-04-26T11:50:51.783Z",
+                "created_at": "2019-04-19T11:50:51.783Z",
+                "updated_at": "2019-04-19T11:50:51.783Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 13,
-                "name": "Finn",
+                "name": "Lyra Erso",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.057Z",
-                "created_at": "2019-04-16T22:01:07.058Z",
-                "updated_at": "2019-04-16T22:01:07.058Z",
+                "deadline": "2019-04-26T11:50:51.784Z",
+                "created_at": "2019-04-19T11:50:51.785Z",
+                "updated_at": "2019-04-19T11:50:51.785Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 14,
-                "name": "Darth Maul",
+                "name": "Ben Solo",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.059Z",
-                "created_at": "2019-04-16T22:01:07.060Z",
-                "updated_at": "2019-04-16T22:01:07.060Z",
+                "deadline": "2019-04-26T11:50:51.786Z",
+                "created_at": "2019-04-19T11:50:51.787Z",
+                "updated_at": "2019-04-19T11:50:51.787Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 15,
-                "name": "Hera Syndulla",
+                "name": "Finn",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.061Z",
-                "created_at": "2019-04-16T22:01:07.062Z",
-                "updated_at": "2019-04-16T22:01:07.062Z",
+                "deadline": "2019-04-26T11:50:51.788Z",
+                "created_at": "2019-04-19T11:50:51.789Z",
+                "updated_at": "2019-04-19T11:50:51.789Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 16,
-                "name": "Sabine Wren",
+                "name": "Qui-Gon Jinn",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.063Z",
-                "created_at": "2019-04-16T22:01:07.063Z",
-                "updated_at": "2019-04-16T22:01:07.063Z",
+                "deadline": "2019-04-26T11:50:51.790Z",
+                "created_at": "2019-04-19T11:50:51.791Z",
+                "updated_at": "2019-04-19T11:50:51.791Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 17,
-                "name": "Rune Haako",
+                "name": "Darth Maul",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.064Z",
-                "created_at": "2019-04-16T22:01:07.065Z",
-                "updated_at": "2019-04-16T22:01:07.065Z",
+                "deadline": "2019-04-26T11:50:51.792Z",
+                "created_at": "2019-04-19T11:50:51.793Z",
+                "updated_at": "2019-04-19T11:50:51.793Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 18,
-                "name": "Sabine Wren",
+                "name": "Poe Dameron",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.066Z",
-                "created_at": "2019-04-16T22:01:07.067Z",
-                "updated_at": "2019-04-16T22:01:07.067Z",
+                "deadline": "2019-04-26T11:50:51.794Z",
+                "created_at": "2019-04-19T11:50:51.794Z",
+                "updated_at": "2019-04-19T11:50:51.794Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 19,
-                "name": "Ben Solo",
+                "name": "Supreme Leader Snoke",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.068Z",
-                "created_at": "2019-04-16T22:01:07.069Z",
-                "updated_at": "2019-04-16T22:01:07.069Z",
+                "deadline": "2019-04-26T11:50:51.795Z",
+                "created_at": "2019-04-19T11:50:51.796Z",
+                "updated_at": "2019-04-19T11:50:51.796Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 20,
-                "name": "Admiral Ackbar",
+                "name": "Luke Skywalker",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.070Z",
-                "created_at": "2019-04-16T22:01:07.070Z",
-                "updated_at": "2019-04-16T22:01:07.070Z",
+                "deadline": "2019-04-26T11:50:51.798Z",
+                "created_at": "2019-04-19T11:50:51.799Z",
+                "updated_at": "2019-04-19T11:50:51.799Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 21,
-                "name": "Luke Skywalker",
+                "name": "Hera Syndulla",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.071Z",
-                "created_at": "2019-04-16T22:01:07.072Z",
-                "updated_at": "2019-04-16T22:01:07.072Z",
+                "deadline": "2019-04-26T11:50:51.800Z",
+                "created_at": "2019-04-19T11:50:51.801Z",
+                "updated_at": "2019-04-19T11:50:51.801Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 22,
-                "name": "Greedo",
+                "name": "Chirrut Imwe",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.073Z",
-                "created_at": "2019-04-16T22:01:07.074Z",
-                "updated_at": "2019-04-16T22:01:07.074Z",
+                "deadline": "2019-04-26T11:50:51.802Z",
+                "created_at": "2019-04-19T11:50:51.803Z",
+                "updated_at": "2019-04-19T11:50:51.803Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 23,
-                "name": "Finn",
+                "name": "Shmi Skywalker",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.075Z",
-                "created_at": "2019-04-16T22:01:07.075Z",
-                "updated_at": "2019-04-16T22:01:07.075Z",
+                "deadline": "2019-04-26T11:50:51.803Z",
+                "created_at": "2019-04-19T11:50:51.804Z",
+                "updated_at": "2019-04-19T11:50:51.804Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
@@ -692,63 +750,63 @@
                 "name": "Galen Erso",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.076Z",
-                "created_at": "2019-04-16T22:01:07.077Z",
-                "updated_at": "2019-04-16T22:01:07.077Z",
+                "deadline": "2019-04-26T11:50:51.805Z",
+                "created_at": "2019-04-19T11:50:51.806Z",
+                "updated_at": "2019-04-19T11:50:51.806Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 25,
-                "name": "Anakin Skywalker",
+                "name": "Ezra Bridger",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.078Z",
-                "created_at": "2019-04-16T22:01:07.079Z",
-                "updated_at": "2019-04-16T22:01:07.079Z",
+                "deadline": "2019-04-26T11:50:51.807Z",
+                "created_at": "2019-04-19T11:50:51.807Z",
+                "updated_at": "2019-04-19T11:50:51.807Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 26,
-                "name": "Count Dooku",
+                "name": "Jyn Erso",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.080Z",
-                "created_at": "2019-04-16T22:01:07.080Z",
-                "updated_at": "2019-04-16T22:01:07.080Z",
+                "deadline": "2019-04-26T11:50:51.808Z",
+                "created_at": "2019-04-19T11:50:51.809Z",
+                "updated_at": "2019-04-19T11:50:51.809Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               },
               {
                 "id": 27,
-                "name": "Lando Calrissian",
+                "name": "Captain Phasma",
                 "done": false,
                 "todo_id": 8,
-                "deadline": "2019-04-23T22:01:07.081Z",
-                "created_at": "2019-04-16T22:01:07.082Z",
-                "updated_at": "2019-04-16T22:01:07.082Z",
+                "deadline": "2019-04-26T11:50:51.810Z",
+                "created_at": "2019-04-19T11:50:51.811Z",
+                "updated_at": "2019-04-19T11:50:51.811Z",
                 "todo": {
                   "id": 8,
-                  "title": "dolor",
+                  "title": "nihil",
                   "user_id": 10,
-                  "created_at": "2019-04-16T22:01:07.046Z",
-                  "updated_at": "2019-04-16T22:01:07.046Z"
+                  "created_at": "2019-04-19T11:50:51.774Z",
+                  "updated_at": "2019-04-19T11:50:51.774Z"
                 }
               }
             ]
@@ -772,322 +830,322 @@
             [
               {
                 "id": 28,
-                "name": "Hera Syndulla",
+                "name": "Grand Moff Tarkin",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.103Z",
-                "created_at": "2019-04-16T22:01:07.104Z",
-                "updated_at": "2019-04-16T22:01:07.104Z",
+                "deadline": "2019-04-26T11:50:51.842Z",
+                "created_at": "2019-04-19T11:50:51.843Z",
+                "updated_at": "2019-04-19T11:50:51.843Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 29,
-                "name": "Grand Admiral Thrawn",
+                "name": "Borvo the Hutt",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.105Z",
-                "created_at": "2019-04-16T22:01:07.105Z",
-                "updated_at": "2019-04-16T22:01:07.105Z",
+                "deadline": "2019-04-26T11:50:51.844Z",
+                "created_at": "2019-04-19T11:50:51.845Z",
+                "updated_at": "2019-04-19T11:50:51.845Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 30,
-                "name": "Maz Kanata",
+                "name": "Jyn Erso",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.106Z",
-                "created_at": "2019-04-16T22:01:07.107Z",
-                "updated_at": "2019-04-16T22:01:07.107Z",
+                "deadline": "2019-04-26T11:50:51.846Z",
+                "created_at": "2019-04-19T11:50:51.847Z",
+                "updated_at": "2019-04-19T11:50:51.847Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 31,
-                "name": "Rose Tico",
+                "name": "Hera Syndulla",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.108Z",
-                "created_at": "2019-04-16T22:01:07.109Z",
-                "updated_at": "2019-04-16T22:01:07.109Z",
+                "deadline": "2019-04-26T11:50:51.848Z",
+                "created_at": "2019-04-19T11:50:51.849Z",
+                "updated_at": "2019-04-19T11:50:51.849Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 32,
-                "name": "Poe Dameron",
+                "name": "Jango Fett",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.110Z",
-                "created_at": "2019-04-16T22:01:07.111Z",
-                "updated_at": "2019-04-16T22:01:07.111Z",
+                "deadline": "2019-04-26T11:50:51.850Z",
+                "created_at": "2019-04-19T11:50:51.851Z",
+                "updated_at": "2019-04-19T11:50:51.851Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 33,
-                "name": "Jar Jar Binks",
+                "name": "Han Solo",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.112Z",
-                "created_at": "2019-04-16T22:01:07.113Z",
-                "updated_at": "2019-04-16T22:01:07.113Z",
+                "deadline": "2019-04-26T11:50:51.852Z",
+                "created_at": "2019-04-19T11:50:51.853Z",
+                "updated_at": "2019-04-19T11:50:51.853Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 34,
-                "name": "Asajj Ventress",
+                "name": "Sheev Palpatine",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.114Z",
-                "created_at": "2019-04-16T22:01:07.114Z",
-                "updated_at": "2019-04-16T22:01:07.114Z",
+                "deadline": "2019-04-26T11:50:51.854Z",
+                "created_at": "2019-04-19T11:50:51.855Z",
+                "updated_at": "2019-04-19T11:50:51.855Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 35,
-                "name": "Mon Mothma",
+                "name": "Ahsoka Tano",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.115Z",
-                "created_at": "2019-04-16T22:01:07.116Z",
-                "updated_at": "2019-04-16T22:01:07.116Z",
+                "deadline": "2019-04-26T11:50:51.856Z",
+                "created_at": "2019-04-19T11:50:51.856Z",
+                "updated_at": "2019-04-19T11:50:51.856Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 36,
-                "name": "Savage Opress",
+                "name": "Nute Gunray",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.117Z",
-                "created_at": "2019-04-16T22:01:07.118Z",
-                "updated_at": "2019-04-16T22:01:07.118Z",
+                "deadline": "2019-04-26T11:50:51.857Z",
+                "created_at": "2019-04-19T11:50:51.858Z",
+                "updated_at": "2019-04-19T11:50:51.858Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 37,
-                "name": "Maz Kanata",
+                "name": "Rose Tico",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.119Z",
-                "created_at": "2019-04-16T22:01:07.120Z",
-                "updated_at": "2019-04-16T22:01:07.120Z",
+                "deadline": "2019-04-26T11:50:51.859Z",
+                "created_at": "2019-04-19T11:50:51.860Z",
+                "updated_at": "2019-04-19T11:50:51.860Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 38,
-                "name": "Lando Calrissian",
+                "name": "Han Solo",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.121Z",
-                "created_at": "2019-04-16T22:01:07.121Z",
-                "updated_at": "2019-04-16T22:01:07.121Z",
+                "deadline": "2019-04-26T11:50:51.861Z",
+                "created_at": "2019-04-19T11:50:51.862Z",
+                "updated_at": "2019-04-19T11:50:51.862Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 39,
-                "name": "Obi-Wan Kenobi",
+                "name": "Ezra Bridger",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.122Z",
-                "created_at": "2019-04-16T22:01:07.133Z",
-                "updated_at": "2019-04-16T22:01:07.133Z",
+                "deadline": "2019-04-26T11:50:51.863Z",
+                "created_at": "2019-04-19T11:50:51.864Z",
+                "updated_at": "2019-04-19T11:50:51.864Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 40,
-                "name": "Panaka",
+                "name": "Finn",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.134Z",
-                "created_at": "2019-04-16T22:01:07.135Z",
-                "updated_at": "2019-04-16T22:01:07.135Z",
+                "deadline": "2019-04-26T11:50:51.865Z",
+                "created_at": "2019-04-19T11:50:51.866Z",
+                "updated_at": "2019-04-19T11:50:51.866Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 41,
-                "name": "Darth Vader",
+                "name": "Saw Gerrera",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.136Z",
-                "created_at": "2019-04-16T22:01:07.137Z",
-                "updated_at": "2019-04-16T22:01:07.137Z",
+                "deadline": "2019-04-26T11:50:51.867Z",
+                "created_at": "2019-04-19T11:50:51.868Z",
+                "updated_at": "2019-04-19T11:50:51.868Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 42,
-                "name": "Saw Gerrera",
+                "name": "Finn",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.138Z",
-                "created_at": "2019-04-16T22:01:07.138Z",
-                "updated_at": "2019-04-16T22:01:07.138Z",
+                "deadline": "2019-04-26T11:50:51.869Z",
+                "created_at": "2019-04-19T11:50:51.870Z",
+                "updated_at": "2019-04-19T11:50:51.870Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 43,
-                "name": "Mon Mothma",
+                "name": "Darth Sidious",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.139Z",
-                "created_at": "2019-04-16T22:01:07.140Z",
-                "updated_at": "2019-04-16T22:01:07.140Z",
+                "deadline": "2019-04-26T11:50:51.871Z",
+                "created_at": "2019-04-19T11:50:51.872Z",
+                "updated_at": "2019-04-19T11:50:51.872Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 44,
-                "name": "Hera Syndulla",
+                "name": "Darth Maul",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.141Z",
-                "created_at": "2019-04-16T22:01:07.142Z",
-                "updated_at": "2019-04-16T22:01:07.142Z",
+                "deadline": "2019-04-26T11:50:51.873Z",
+                "created_at": "2019-04-19T11:50:51.874Z",
+                "updated_at": "2019-04-19T11:50:51.874Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 45,
-                "name": "Bail Organa",
+                "name": "Rune Haako",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.143Z",
-                "created_at": "2019-04-16T22:01:07.144Z",
-                "updated_at": "2019-04-16T22:01:07.144Z",
+                "deadline": "2019-04-26T11:50:51.875Z",
+                "created_at": "2019-04-19T11:50:51.876Z",
+                "updated_at": "2019-04-19T11:50:51.876Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 46,
-                "name": "Jabba the Hutt",
+                "name": "Mace Windu",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.145Z",
-                "created_at": "2019-04-16T22:01:07.146Z",
-                "updated_at": "2019-04-16T22:01:07.146Z",
+                "deadline": "2019-04-26T11:50:51.877Z",
+                "created_at": "2019-04-19T11:50:51.878Z",
+                "updated_at": "2019-04-19T11:50:51.878Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               },
               {
                 "id": 47,
-                "name": "Vice Admiral Holdo",
+                "name": "Wedge Antilles",
                 "done": false,
                 "todo_id": 9,
-                "deadline": "2019-04-23T22:01:07.147Z",
-                "created_at": "2019-04-16T22:01:07.148Z",
-                "updated_at": "2019-04-16T22:01:07.148Z",
+                "deadline": "2019-04-26T11:50:51.879Z",
+                "created_at": "2019-04-19T11:50:51.880Z",
+                "updated_at": "2019-04-19T11:50:51.880Z",
                 "todo": {
                   "id": 9,
-                  "title": "et",
+                  "title": "quisquam",
                   "user_id": 11,
-                  "created_at": "2019-04-16T22:01:07.102Z",
-                  "updated_at": "2019-04-16T22:01:07.102Z"
+                  "created_at": "2019-04-19T11:50:51.841Z",
+                  "updated_at": "2019-04-19T11:50:51.841Z"
                 }
               }
             ]
@@ -1156,18 +1214,18 @@
 
             {
               "id": 88,
-              "name": "Asajj Ventress",
+              "name": "Admiral Ackbar",
               "done": false,
               "todo_id": 12,
-              "deadline": "2019-04-23T22:01:07.255Z",
-              "created_at": "2019-04-16T22:01:07.256Z",
-              "updated_at": "2019-04-16T22:01:07.256Z",
+              "deadline": "2019-04-26T11:50:52.004Z",
+              "created_at": "2019-04-19T11:50:52.005Z",
+              "updated_at": "2019-04-19T11:50:52.005Z",
               "todo": {
                 "id": 12,
-                "title": "nostrum",
+                "title": "rerum",
                 "user_id": 14,
-                "created_at": "2019-04-16T22:01:07.254Z",
-                "updated_at": "2019-04-16T22:01:07.254Z"
+                "created_at": "2019-04-19T11:50:52.003Z",
+                "updated_at": "2019-04-19T11:50:52.003Z"
               }
             }
 
@@ -1189,18 +1247,18 @@
 
             {
               "id": 108,
-              "name": "Wedge Antilles",
+              "name": "Asajj Ventress",
               "done": false,
               "todo_id": 13,
-              "deadline": "2019-04-23T22:01:07.299Z",
-              "created_at": "2019-04-16T22:01:07.300Z",
-              "updated_at": "2019-04-16T22:01:07.300Z",
+              "deadline": "2019-04-26T11:50:52.054Z",
+              "created_at": "2019-04-19T11:50:52.055Z",
+              "updated_at": "2019-04-19T11:50:52.055Z",
               "todo": {
                 "id": 13,
-                "title": "consequatur",
+                "title": "impedit",
                 "user_id": 15,
-                "created_at": "2019-04-16T22:01:07.298Z",
-                "updated_at": "2019-04-16T22:01:07.298Z"
+                "created_at": "2019-04-19T11:50:52.053Z",
+                "updated_at": "2019-04-19T11:50:52.053Z"
               }
             }
 
@@ -1274,190 +1332,190 @@
 
             {
               "id": 16,
-              "title": "qui",
+              "title": "quas",
               "user_id": 18,
-              "created_at": "2019-04-16T22:01:07.430Z",
-              "updated_at": "2019-04-16T22:01:07.430Z",
+              "created_at": "2019-04-19T11:50:52.216Z",
+              "updated_at": "2019-04-19T11:50:52.216Z",
               "items": [
                 {
                   "id": 168,
-                  "name": "Count Dooku",
+                  "name": "Ben Solo",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.431Z",
-                  "created_at": "2019-04-16T22:01:07.432Z",
-                  "updated_at": "2019-04-16T22:01:07.432Z"
+                  "deadline": "2019-04-26T11:50:52.217Z",
+                  "created_at": "2019-04-19T11:50:52.218Z",
+                  "updated_at": "2019-04-19T11:50:52.218Z"
                 },
                 {
                   "id": 169,
-                  "name": "Mace Windu",
+                  "name": "Shmi Skywalker",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.433Z",
-                  "created_at": "2019-04-16T22:01:07.433Z",
-                  "updated_at": "2019-04-16T22:01:07.433Z"
+                  "deadline": "2019-04-26T11:50:52.219Z",
+                  "created_at": "2019-04-19T11:50:52.220Z",
+                  "updated_at": "2019-04-19T11:50:52.220Z"
                 },
                 {
                   "id": 170,
-                  "name": "Ezra Bridger",
+                  "name": "Chirrut Imwe",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.434Z",
-                  "created_at": "2019-04-16T22:01:07.435Z",
-                  "updated_at": "2019-04-16T22:01:07.435Z"
+                  "deadline": "2019-04-26T11:50:52.221Z",
+                  "created_at": "2019-04-19T11:50:52.222Z",
+                  "updated_at": "2019-04-19T11:50:52.222Z"
                 },
                 {
                   "id": 171,
-                  "name": "Anakin Skywalker",
+                  "name": "Qui-Gon Jinn",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.436Z",
-                  "created_at": "2019-04-16T22:01:07.437Z",
-                  "updated_at": "2019-04-16T22:01:07.437Z"
+                  "deadline": "2019-04-26T11:50:52.223Z",
+                  "created_at": "2019-04-19T11:50:52.224Z",
+                  "updated_at": "2019-04-19T11:50:52.224Z"
                 },
                 {
                   "id": 172,
-                  "name": "Chewbacca",
+                  "name": "Jyn Erso",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.438Z",
-                  "created_at": "2019-04-16T22:01:07.439Z",
-                  "updated_at": "2019-04-16T22:01:07.439Z"
+                  "deadline": "2019-04-26T11:50:52.225Z",
+                  "created_at": "2019-04-19T11:50:52.226Z",
+                  "updated_at": "2019-04-19T11:50:52.226Z"
                 },
                 {
                   "id": 173,
-                  "name": "Saw Gerrera",
+                  "name": "Ben Solo",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.439Z",
-                  "created_at": "2019-04-16T22:01:07.440Z",
-                  "updated_at": "2019-04-16T22:01:07.440Z"
+                  "deadline": "2019-04-26T11:50:52.227Z",
+                  "created_at": "2019-04-19T11:50:52.227Z",
+                  "updated_at": "2019-04-19T11:50:52.227Z"
                 },
                 {
                   "id": 174,
-                  "name": "Panaka",
+                  "name": "Count Dooku",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.441Z",
-                  "created_at": "2019-04-16T22:01:07.442Z",
-                  "updated_at": "2019-04-16T22:01:07.442Z"
+                  "deadline": "2019-04-26T11:50:52.228Z",
+                  "created_at": "2019-04-19T11:50:52.229Z",
+                  "updated_at": "2019-04-19T11:50:52.229Z"
                 },
                 {
                   "id": 175,
-                  "name": "Lando Calrissian",
+                  "name": "Asajj Ventress",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.443Z",
-                  "created_at": "2019-04-16T22:01:07.444Z",
-                  "updated_at": "2019-04-16T22:01:07.444Z"
+                  "deadline": "2019-04-26T11:50:52.230Z",
+                  "created_at": "2019-04-19T11:50:52.231Z",
+                  "updated_at": "2019-04-19T11:50:52.231Z"
                 },
                 {
                   "id": 176,
-                  "name": "Jar Jar Binks",
+                  "name": "Jango Fett",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.444Z",
-                  "created_at": "2019-04-16T22:01:07.445Z",
-                  "updated_at": "2019-04-16T22:01:07.445Z"
+                  "deadline": "2019-04-26T11:50:52.232Z",
+                  "created_at": "2019-04-19T11:50:52.233Z",
+                  "updated_at": "2019-04-19T11:50:52.233Z"
                 },
                 {
                   "id": 177,
-                  "name": "Mace Windu",
+                  "name": "Admiral Ackbar",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.446Z",
-                  "created_at": "2019-04-16T22:01:07.447Z",
-                  "updated_at": "2019-04-16T22:01:07.447Z"
+                  "deadline": "2019-04-26T11:50:52.234Z",
+                  "created_at": "2019-04-19T11:50:52.235Z",
+                  "updated_at": "2019-04-19T11:50:52.235Z"
                 },
                 {
                   "id": 178,
-                  "name": "Nute Gunray",
+                  "name": "Count Dooku",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.448Z",
-                  "created_at": "2019-04-16T22:01:07.449Z",
-                  "updated_at": "2019-04-16T22:01:07.449Z"
+                  "deadline": "2019-04-26T11:50:52.236Z",
+                  "created_at": "2019-04-19T11:50:52.237Z",
+                  "updated_at": "2019-04-19T11:50:52.237Z"
                 },
                 {
                   "id": 179,
-                  "name": "Luke Skywalker",
+                  "name": "Darth Caedus",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.449Z",
-                  "created_at": "2019-04-16T22:01:07.450Z",
-                  "updated_at": "2019-04-16T22:01:07.450Z"
+                  "deadline": "2019-04-26T11:50:52.238Z",
+                  "created_at": "2019-04-19T11:50:52.239Z",
+                  "updated_at": "2019-04-19T11:50:52.239Z"
                 },
                 {
                   "id": 180,
-                  "name": "General Hux",
+                  "name": "Chirrut Imwe",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.451Z",
-                  "created_at": "2019-04-16T22:01:07.452Z",
-                  "updated_at": "2019-04-16T22:01:07.452Z"
+                  "deadline": "2019-04-26T11:50:52.240Z",
+                  "created_at": "2019-04-19T11:50:52.241Z",
+                  "updated_at": "2019-04-19T11:50:52.241Z"
                 },
                 {
                   "id": 181,
-                  "name": "Ezra Bridger",
+                  "name": "Panaka",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.453Z",
-                  "created_at": "2019-04-16T22:01:07.453Z",
-                  "updated_at": "2019-04-16T22:01:07.453Z"
+                  "deadline": "2019-04-26T11:50:52.242Z",
+                  "created_at": "2019-04-19T11:50:52.247Z",
+                  "updated_at": "2019-04-19T11:50:52.247Z"
                 },
                 {
                   "id": 182,
-                  "name": "Lyra Erso",
+                  "name": "Sheev Palpatine",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.454Z",
-                  "created_at": "2019-04-16T22:01:07.455Z",
-                  "updated_at": "2019-04-16T22:01:07.455Z"
+                  "deadline": "2019-04-26T11:50:52.248Z",
+                  "created_at": "2019-04-19T11:50:52.250Z",
+                  "updated_at": "2019-04-19T11:50:52.250Z"
                 },
                 {
                   "id": 183,
-                  "name": "Maz Kanata",
+                  "name": "Grand Moff Tarkin",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.456Z",
-                  "created_at": "2019-04-16T22:01:07.457Z",
-                  "updated_at": "2019-04-16T22:01:07.457Z"
+                  "deadline": "2019-04-26T11:50:52.251Z",
+                  "created_at": "2019-04-19T11:50:52.253Z",
+                  "updated_at": "2019-04-19T11:50:52.253Z"
                 },
                 {
                   "id": 184,
-                  "name": "Galen Erso",
+                  "name": "Darth Maul",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.458Z",
-                  "created_at": "2019-04-16T22:01:07.458Z",
-                  "updated_at": "2019-04-16T22:01:07.458Z"
+                  "deadline": "2019-04-26T11:50:52.254Z",
+                  "created_at": "2019-04-19T11:50:52.255Z",
+                  "updated_at": "2019-04-19T11:50:52.255Z"
                 },
                 {
                   "id": 185,
-                  "name": "Watto",
+                  "name": "Admiral Ackbar",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.459Z",
-                  "created_at": "2019-04-16T22:01:07.460Z",
-                  "updated_at": "2019-04-16T22:01:07.460Z"
+                  "deadline": "2019-04-26T11:50:52.257Z",
+                  "created_at": "2019-04-19T11:50:52.258Z",
+                  "updated_at": "2019-04-19T11:50:52.258Z"
                 },
                 {
                   "id": 186,
-                  "name": "Ezra Bridger",
+                  "name": "Watto",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.461Z",
-                  "created_at": "2019-04-16T22:01:07.461Z",
-                  "updated_at": "2019-04-16T22:01:07.461Z"
+                  "deadline": "2019-04-26T11:50:52.259Z",
+                  "created_at": "2019-04-19T11:50:52.260Z",
+                  "updated_at": "2019-04-19T11:50:52.260Z"
                 },
                 {
                   "id": 187,
-                  "name": "Darth Vader",
+                  "name": "Finn",
                   "done": false,
                   "todo_id": 16,
-                  "deadline": "2019-04-23T22:01:07.462Z",
-                  "created_at": "2019-04-16T22:01:07.463Z",
-                  "updated_at": "2019-04-16T22:01:07.463Z"
+                  "deadline": "2019-04-26T11:50:52.262Z",
+                  "created_at": "2019-04-19T11:50:52.263Z",
+                  "updated_at": "2019-04-19T11:50:52.263Z"
                 },
                 {
                   "id": 188,
@@ -1465,17 +1523,17 @@
                   "done": false,
                   "todo_id": 16,
                   "deadline": null,
-                  "created_at": "2019-04-16T22:01:07.467Z",
-                  "updated_at": "2019-04-16T22:01:07.467Z"
+                  "created_at": "2019-04-19T11:50:52.269Z",
+                  "updated_at": "2019-04-19T11:50:52.269Z"
                 }
               ],
               "user": {
                 "id": 18,
-                "name": "Miss Forest Cruickshank",
-                "email": "debbra@dachpouros.co",
-                "password_digest": "$2a$04$R5Wj8QRoqZLt0xG0oGRQtuvrmNtWz0bSACcJmQjz6RyVviHBjzzeW",
-                "created_at": "2019-04-16T22:01:07.428Z",
-                "updated_at": "2019-04-16T22:01:07.428Z"
+                "name": "Kori Gibson",
+                "email": "louisa@gradybahringer.org",
+                "password_digest": "$2a$04$TmPn3PzeKOeULLrE9a9TC.Yz5i45p61EcvSgAfUHHQh7yBFjrI1NS",
+                "created_at": "2019-04-19T11:50:52.214Z",
+                "updated_at": "2019-04-19T11:50:52.214Z"
               }
             }
 
@@ -1497,190 +1555,190 @@
 
             {
               "id": 17,
-              "title": "iure",
+              "title": "illo",
               "user_id": 19,
-              "created_at": "2019-04-16T22:01:07.483Z",
-              "updated_at": "2019-04-16T22:01:07.483Z",
+              "created_at": "2019-04-19T11:50:52.287Z",
+              "updated_at": "2019-04-19T11:50:52.287Z",
               "items": [
                 {
                   "id": 189,
-                  "name": "Wedge Antilles",
+                  "name": "Galen Erso",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.484Z",
-                  "created_at": "2019-04-16T22:01:07.485Z",
-                  "updated_at": "2019-04-16T22:01:07.485Z"
+                  "deadline": "2019-04-26T11:50:52.288Z",
+                  "created_at": "2019-04-19T11:50:52.289Z",
+                  "updated_at": "2019-04-19T11:50:52.289Z"
                 },
                 {
                   "id": 190,
-                  "name": "Panaka",
+                  "name": "Jyn Erso",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.486Z",
-                  "created_at": "2019-04-16T22:01:07.487Z",
-                  "updated_at": "2019-04-16T22:01:07.487Z"
+                  "deadline": "2019-04-26T11:50:52.290Z",
+                  "created_at": "2019-04-19T11:50:52.291Z",
+                  "updated_at": "2019-04-19T11:50:52.291Z"
                 },
                 {
                   "id": 191,
-                  "name": "Mace Windu",
+                  "name": "Hera Syndulla",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.492Z",
-                  "created_at": "2019-04-16T22:01:07.493Z",
-                  "updated_at": "2019-04-16T22:01:07.493Z"
+                  "deadline": "2019-04-26T11:50:52.292Z",
+                  "created_at": "2019-04-19T11:50:52.293Z",
+                  "updated_at": "2019-04-19T11:50:52.293Z"
                 },
                 {
                   "id": 192,
-                  "name": "Maz Kanata",
+                  "name": "Watto",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.494Z",
-                  "created_at": "2019-04-16T22:01:07.495Z",
-                  "updated_at": "2019-04-16T22:01:07.495Z"
+                  "deadline": "2019-04-26T11:50:52.294Z",
+                  "created_at": "2019-04-19T11:50:52.295Z",
+                  "updated_at": "2019-04-19T11:50:52.295Z"
                 },
                 {
                   "id": 193,
-                  "name": "Boba Fett",
+                  "name": "Darth Vader",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.496Z",
-                  "created_at": "2019-04-16T22:01:07.497Z",
-                  "updated_at": "2019-04-16T22:01:07.497Z"
+                  "deadline": "2019-04-26T11:50:52.296Z",
+                  "created_at": "2019-04-19T11:50:52.297Z",
+                  "updated_at": "2019-04-19T11:50:52.297Z"
                 },
                 {
                   "id": 194,
-                  "name": "Yoda",
+                  "name": "Bendu",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.498Z",
-                  "created_at": "2019-04-16T22:01:07.499Z",
-                  "updated_at": "2019-04-16T22:01:07.499Z"
+                  "deadline": "2019-04-26T11:50:52.298Z",
+                  "created_at": "2019-04-19T11:50:52.299Z",
+                  "updated_at": "2019-04-19T11:50:52.299Z"
                 },
                 {
                   "id": 195,
-                  "name": "Rey",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.500Z",
-                  "created_at": "2019-04-16T22:01:07.501Z",
-                  "updated_at": "2019-04-16T22:01:07.501Z"
-                },
-                {
-                  "id": 196,
-                  "name": "Poe Dameron",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.501Z",
-                  "created_at": "2019-04-16T22:01:07.502Z",
-                  "updated_at": "2019-04-16T22:01:07.502Z"
-                },
-                {
-                  "id": 197,
-                  "name": "Anakin Skywalker",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.503Z",
-                  "created_at": "2019-04-16T22:01:07.504Z",
-                  "updated_at": "2019-04-16T22:01:07.504Z"
-                },
-                {
-                  "id": 198,
                   "name": "Savage Opress",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.505Z",
-                  "created_at": "2019-04-16T22:01:07.506Z",
-                  "updated_at": "2019-04-16T22:01:07.506Z"
+                  "deadline": "2019-04-26T11:50:52.300Z",
+                  "created_at": "2019-04-19T11:50:52.301Z",
+                  "updated_at": "2019-04-19T11:50:52.301Z"
                 },
                 {
-                  "id": 199,
+                  "id": 196,
                   "name": "Darth Caedus",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.507Z",
-                  "created_at": "2019-04-16T22:01:07.508Z",
-                  "updated_at": "2019-04-16T22:01:07.508Z"
+                  "deadline": "2019-04-26T11:50:52.302Z",
+                  "created_at": "2019-04-19T11:50:52.302Z",
+                  "updated_at": "2019-04-19T11:50:52.302Z"
                 },
                 {
-                  "id": 200,
-                  "name": "Asajj Ventress",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.509Z",
-                  "created_at": "2019-04-16T22:01:07.510Z",
-                  "updated_at": "2019-04-16T22:01:07.510Z"
-                },
-                {
-                  "id": 201,
-                  "name": "Panaka",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.511Z",
-                  "created_at": "2019-04-16T22:01:07.511Z",
-                  "updated_at": "2019-04-16T22:01:07.511Z"
-                },
-                {
-                  "id": 202,
-                  "name": "Grand Admiral Thrawn",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.512Z",
-                  "created_at": "2019-04-16T22:01:07.513Z",
-                  "updated_at": "2019-04-16T22:01:07.513Z"
-                },
-                {
-                  "id": 203,
-                  "name": "Wedge Antilles",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.514Z",
-                  "created_at": "2019-04-16T22:01:07.515Z",
-                  "updated_at": "2019-04-16T22:01:07.515Z"
-                },
-                {
-                  "id": 204,
-                  "name": "Padme Amidala",
-                  "done": false,
-                  "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.516Z",
-                  "created_at": "2019-04-16T22:01:07.517Z",
-                  "updated_at": "2019-04-16T22:01:07.517Z"
-                },
-                {
-                  "id": 205,
+                  "id": 197,
                   "name": "Chirrut Imwe",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.518Z",
-                  "created_at": "2019-04-16T22:01:07.519Z",
-                  "updated_at": "2019-04-16T22:01:07.519Z"
+                  "deadline": "2019-04-26T11:50:52.303Z",
+                  "created_at": "2019-04-19T11:50:52.304Z",
+                  "updated_at": "2019-04-19T11:50:52.304Z"
+                },
+                {
+                  "id": 198,
+                  "name": "Bail Organa",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.305Z",
+                  "created_at": "2019-04-19T11:50:52.306Z",
+                  "updated_at": "2019-04-19T11:50:52.306Z"
+                },
+                {
+                  "id": 199,
+                  "name": "Mace Windu",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.307Z",
+                  "created_at": "2019-04-19T11:50:52.308Z",
+                  "updated_at": "2019-04-19T11:50:52.308Z"
+                },
+                {
+                  "id": 200,
+                  "name": "Jango Fett",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.309Z",
+                  "created_at": "2019-04-19T11:50:52.309Z",
+                  "updated_at": "2019-04-19T11:50:52.309Z"
+                },
+                {
+                  "id": 201,
+                  "name": "Rey",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.310Z",
+                  "created_at": "2019-04-19T11:50:52.311Z",
+                  "updated_at": "2019-04-19T11:50:52.311Z"
+                },
+                {
+                  "id": 202,
+                  "name": "Darth Sidious",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.312Z",
+                  "created_at": "2019-04-19T11:50:52.313Z",
+                  "updated_at": "2019-04-19T11:50:52.313Z"
+                },
+                {
+                  "id": 203,
+                  "name": "Darth Maul",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.314Z",
+                  "created_at": "2019-04-19T11:50:52.315Z",
+                  "updated_at": "2019-04-19T11:50:52.315Z"
+                },
+                {
+                  "id": 204,
+                  "name": "Darth Maul",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.316Z",
+                  "created_at": "2019-04-19T11:50:52.317Z",
+                  "updated_at": "2019-04-19T11:50:52.317Z"
+                },
+                {
+                  "id": 205,
+                  "name": "Watto",
+                  "done": false,
+                  "todo_id": 17,
+                  "deadline": "2019-04-26T11:50:52.318Z",
+                  "created_at": "2019-04-19T11:50:52.318Z",
+                  "updated_at": "2019-04-19T11:50:52.318Z"
                 },
                 {
                   "id": 206,
-                  "name": "Anakin Skywalker",
+                  "name": "Kanan Jarrus",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.520Z",
-                  "created_at": "2019-04-16T22:01:07.520Z",
-                  "updated_at": "2019-04-16T22:01:07.520Z"
+                  "deadline": "2019-04-26T11:50:52.319Z",
+                  "created_at": "2019-04-19T11:50:52.320Z",
+                  "updated_at": "2019-04-19T11:50:52.320Z"
                 },
                 {
                   "id": 207,
-                  "name": "Ben Solo",
+                  "name": "Anakin Skywalker",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.521Z",
-                  "created_at": "2019-04-16T22:01:07.522Z",
-                  "updated_at": "2019-04-16T22:01:07.522Z"
+                  "deadline": "2019-04-26T11:50:52.321Z",
+                  "created_at": "2019-04-19T11:50:52.322Z",
+                  "updated_at": "2019-04-19T11:50:52.322Z"
                 },
                 {
                   "id": 208,
-                  "name": "Jabba the Hutt",
+                  "name": "Boba Fett",
                   "done": false,
                   "todo_id": 17,
-                  "deadline": "2019-04-23T22:01:07.523Z",
-                  "created_at": "2019-04-16T22:01:07.524Z",
-                  "updated_at": "2019-04-16T22:01:07.524Z"
+                  "deadline": "2019-04-26T11:50:52.323Z",
+                  "created_at": "2019-04-19T11:50:52.324Z",
+                  "updated_at": "2019-04-19T11:50:52.324Z"
                 },
                 {
                   "id": null,
@@ -1694,11 +1752,11 @@
               ],
               "user": {
                 "id": 19,
-                "name": "Noreen Price Jr.",
-                "email": "etsukokovacek@lehnerwilkinson.org",
-                "password_digest": "$2a$04$1qNkSkfEo9kAye274JTD6uV.9hwgmPc40at7.AN8wmsSnYoMUeFi.",
-                "created_at": "2019-04-16T22:01:07.481Z",
-                "updated_at": "2019-04-16T22:01:07.481Z"
+                "name": "Kasie Lebsack",
+                "email": "joselittel@gerlachanderson.net",
+                "password_digest": "$2a$04$87B6e08Zssv31iMH7BvKTuhfHLQsmWWOYypQhQIT0nR4jeumt3f3G",
+                "created_at": "2019-04-19T11:50:52.285Z",
+                "updated_at": "2019-04-19T11:50:52.285Z"
               }
             }
 
@@ -1708,7 +1766,7 @@
     + todo_id: `18` (number, required)
     + id: `209` (number, required)
 
-+ Request returns status code 204
++ Request returns status code 200
 **PUT**&nbsp;&nbsp;`/todos/18/items/209`
 
     + Headers
@@ -1722,7 +1780,30 @@
               "name": "Mozart"
             }
 
-+ Response 204
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "id": 209,
+              "name": "Mozart",
+              "done": false,
+              "todo_id": 18,
+              "deadline": "2019-04-26T11:50:52.343Z",
+              "created_at": "2019-04-19T11:50:52.344Z",
+              "updated_at": "2019-04-19T11:50:52.386Z",
+              "todo": {
+                "id": 18,
+                "title": "suscipit",
+                "user_id": 20,
+                "created_at": "2019-04-19T11:50:52.342Z",
+                "updated_at": "2019-04-19T11:50:52.342Z"
+              }
+            }
 
 + Request updates the item
 **PUT**&nbsp;&nbsp;`/todos/19/items/229`
@@ -1738,7 +1819,30 @@
               "name": "Mozart"
             }
 
-+ Response 204
++ Response 200
+
+    + Headers
+
+            Content-Type: application/json; charset=utf-8
+
+    + Body
+
+            {
+              "id": 229,
+              "name": "Mozart",
+              "done": false,
+              "todo_id": 19,
+              "deadline": "2019-04-26T11:50:52.396Z",
+              "created_at": "2019-04-19T11:50:52.397Z",
+              "updated_at": "2019-04-19T11:50:52.439Z",
+              "todo": {
+                "id": 19,
+                "title": "animi",
+                "user_id": 21,
+                "created_at": "2019-04-19T11:50:52.395Z",
+                "updated_at": "2019-04-19T11:50:52.395Z"
+              }
+            }
 
 + Request returns status code 404
 **PUT**&nbsp;&nbsp;`/todos/20/items/0`
@@ -1833,182 +1937,182 @@
             [
               {
                 "id": 23,
-                "title": "quo",
+                "title": "expedita",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.760Z",
-                "updated_at": "2019-04-16T22:01:07.760Z",
+                "created_at": "2019-04-19T11:50:52.588Z",
+                "updated_at": "2019-04-19T11:50:52.588Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 24,
-                "title": "corrupti",
+                "title": "odit",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.762Z",
-                "updated_at": "2019-04-16T22:01:07.762Z",
+                "created_at": "2019-04-19T11:50:52.590Z",
+                "updated_at": "2019-04-19T11:50:52.590Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 25,
-                "title": "non",
+                "title": "voluptates",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.763Z",
-                "updated_at": "2019-04-16T22:01:07.763Z",
+                "created_at": "2019-04-19T11:50:52.592Z",
+                "updated_at": "2019-04-19T11:50:52.592Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 26,
-                "title": "est",
+                "title": "repellendus",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.765Z",
-                "updated_at": "2019-04-16T22:01:07.765Z",
+                "created_at": "2019-04-19T11:50:52.593Z",
+                "updated_at": "2019-04-19T11:50:52.593Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 27,
-                "title": "et",
+                "title": "dolorem",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.766Z",
-                "updated_at": "2019-04-16T22:01:07.766Z",
+                "created_at": "2019-04-19T11:50:52.595Z",
+                "updated_at": "2019-04-19T11:50:52.595Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 28,
-                "title": "in",
+                "title": "iste",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.768Z",
-                "updated_at": "2019-04-16T22:01:07.768Z",
+                "created_at": "2019-04-19T11:50:52.597Z",
+                "updated_at": "2019-04-19T11:50:52.597Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 29,
-                "title": "et",
+                "title": "quia",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.769Z",
-                "updated_at": "2019-04-16T22:01:07.769Z",
+                "created_at": "2019-04-19T11:50:52.598Z",
+                "updated_at": "2019-04-19T11:50:52.598Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 30,
-                "title": "quas",
+                "title": "eius",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.771Z",
-                "updated_at": "2019-04-16T22:01:07.771Z",
+                "created_at": "2019-04-19T11:50:52.600Z",
+                "updated_at": "2019-04-19T11:50:52.600Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 31,
-                "title": "sint",
+                "title": "provident",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.773Z",
-                "updated_at": "2019-04-16T22:01:07.773Z",
+                "created_at": "2019-04-19T11:50:52.602Z",
+                "updated_at": "2019-04-19T11:50:52.602Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               },
               {
                 "id": 32,
-                "title": "asperiores",
+                "title": "molestiae",
                 "user_id": 25,
-                "created_at": "2019-04-16T22:01:07.775Z",
-                "updated_at": "2019-04-16T22:01:07.775Z",
+                "created_at": "2019-04-19T11:50:52.603Z",
+                "updated_at": "2019-04-19T11:50:52.603Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 25,
-                  "name": "Dr. Taneka Predovic",
-                  "email": "chayabeahan@kuvalis.co",
-                  "password_digest": "$2a$04$tCxmhu5Bf/BHAb29z9F78.zlv20UiP9ubXe8I02VXDKIDqGKJBTaC",
-                  "created_at": "2019-04-16T22:01:07.758Z",
-                  "updated_at": "2019-04-16T22:01:07.758Z"
+                  "name": "Stan Schowalter",
+                  "email": "rubenstehr@skilesvon.co",
+                  "password_digest": "$2a$04$81bjD479HPGcng9Wvke.OetYyqBm.Rc4EN8HLgmllb83k5SxpSHPC",
+                  "created_at": "2019-04-19T11:50:52.586Z",
+                  "updated_at": "2019-04-19T11:50:52.586Z"
                 }
               }
             ]
@@ -2032,182 +2136,182 @@
             [
               {
                 "id": 33,
-                "title": "et",
+                "title": "omnis",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.796Z",
-                "updated_at": "2019-04-16T22:01:07.796Z",
+                "created_at": "2019-04-19T11:50:52.630Z",
+                "updated_at": "2019-04-19T11:50:52.630Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 34,
-                "title": "provident",
+                "title": "est",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.798Z",
-                "updated_at": "2019-04-16T22:01:07.798Z",
+                "created_at": "2019-04-19T11:50:52.632Z",
+                "updated_at": "2019-04-19T11:50:52.632Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 35,
-                "title": "eum",
+                "title": "rerum",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.799Z",
-                "updated_at": "2019-04-16T22:01:07.799Z",
+                "created_at": "2019-04-19T11:50:52.634Z",
+                "updated_at": "2019-04-19T11:50:52.634Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 36,
-                "title": "laudantium",
+                "title": "sint",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.801Z",
-                "updated_at": "2019-04-16T22:01:07.801Z",
+                "created_at": "2019-04-19T11:50:52.636Z",
+                "updated_at": "2019-04-19T11:50:52.636Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 37,
-                "title": "dignissimos",
+                "title": "voluptatem",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.802Z",
-                "updated_at": "2019-04-16T22:01:07.802Z",
+                "created_at": "2019-04-19T11:50:52.637Z",
+                "updated_at": "2019-04-19T11:50:52.637Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 38,
-                "title": "amet",
+                "title": "eius",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.804Z",
-                "updated_at": "2019-04-16T22:01:07.804Z",
+                "created_at": "2019-04-19T11:50:52.639Z",
+                "updated_at": "2019-04-19T11:50:52.639Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 39,
-                "title": "voluptatem",
+                "title": "libero",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.805Z",
-                "updated_at": "2019-04-16T22:01:07.805Z",
+                "created_at": "2019-04-19T11:50:52.641Z",
+                "updated_at": "2019-04-19T11:50:52.641Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 40,
-                "title": "sequi",
+                "title": "odio",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.807Z",
-                "updated_at": "2019-04-16T22:01:07.807Z",
+                "created_at": "2019-04-19T11:50:52.643Z",
+                "updated_at": "2019-04-19T11:50:52.643Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 41,
-                "title": "quisquam",
+                "title": "et",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.808Z",
-                "updated_at": "2019-04-16T22:01:07.808Z",
+                "created_at": "2019-04-19T11:50:52.644Z",
+                "updated_at": "2019-04-19T11:50:52.644Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               },
               {
                 "id": 42,
-                "title": "est",
+                "title": "ea",
                 "user_id": 26,
-                "created_at": "2019-04-16T22:01:07.810Z",
-                "updated_at": "2019-04-16T22:01:07.810Z",
+                "created_at": "2019-04-19T11:50:52.646Z",
+                "updated_at": "2019-04-19T11:50:52.646Z",
                 "items": [
             
                 ],
                 "user": {
                   "id": 26,
-                  "name": "Lilliam Bradtke MD",
-                  "email": "danette@heaney.io",
-                  "password_digest": "$2a$04$lvs3IyIE6h4PDstY//OSyuf6JHNJidGe/pmV1agljwYDRAVxWIGNW",
-                  "created_at": "2019-04-16T22:01:07.794Z",
-                  "updated_at": "2019-04-16T22:01:07.794Z"
+                  "name": "Jimmie Feest Sr.",
+                  "email": "tomokuneva@effertzgraham.co",
+                  "password_digest": "$2a$04$5CuLhWAjzyKKPmn9eCvYyONBzpEbNnAjD77DGvY/iHYLe3uBNCjJe",
+                  "created_at": "2019-04-19T11:50:52.628Z",
+                  "updated_at": "2019-04-19T11:50:52.628Z"
                 }
               }
             ]
@@ -2235,20 +2339,20 @@
 
             {
               "id": 43,
-              "title": "rerum",
+              "title": "odit",
               "user_id": 27,
-              "created_at": "2019-04-16T22:01:07.830Z",
-              "updated_at": "2019-04-16T22:01:07.830Z",
+              "created_at": "2019-04-19T11:50:52.667Z",
+              "updated_at": "2019-04-19T11:50:52.667Z",
               "items": [
             
               ],
               "user": {
                 "id": 27,
-                "name": "Rodney Wiza",
-                "email": "sabine@wilderman.org",
-                "password_digest": "$2a$04$ps9MSXLqiy4V9S30l4V/oeMYsRQhYrT./ejD0yMtA0znK2B9Mn1pi",
-                "created_at": "2019-04-16T22:01:07.828Z",
-                "updated_at": "2019-04-16T22:01:07.828Z"
+                "name": "Martin Hessel",
+                "email": "nadenehammes@reynolds.io",
+                "password_digest": "$2a$04$EC6Ve7N.E2QcBbJNCgn.vu4jGYHnbZhwip.FYNSQGRR/jsJ4mQ/Aq",
+                "created_at": "2019-04-19T11:50:52.665Z",
+                "updated_at": "2019-04-19T11:50:52.665Z"
               }
             }
 
@@ -2270,20 +2374,20 @@
 
             {
               "id": 53,
-              "title": "impedit",
+              "title": "fugit",
               "user_id": 28,
-              "created_at": "2019-04-16T22:01:07.859Z",
-              "updated_at": "2019-04-16T22:01:07.859Z",
+              "created_at": "2019-04-19T11:50:52.692Z",
+              "updated_at": "2019-04-19T11:50:52.692Z",
               "items": [
             
               ],
               "user": {
                 "id": 28,
-                "name": "Kimi Pacocha IV",
-                "email": "demarcus@reichert.info",
-                "password_digest": "$2a$04$KM6KRuBP.xHIwnbffKq.bOeWVTiygJWXDcqzpHn0fNpd6Wjw6jAEW",
-                "created_at": "2019-04-16T22:01:07.857Z",
-                "updated_at": "2019-04-16T22:01:07.857Z"
+                "name": "Edra Jenkins",
+                "email": "roccozulauf@roberts.info",
+                "password_digest": "$2a$04$mtdg4ggsg6w05y4eM6.Lye0JkrU8mHaZ.Oku12LGeN.z3mD9ORCJK",
+                "created_at": "2019-04-19T11:50:52.690Z",
+                "updated_at": "2019-04-19T11:50:52.690Z"
               }
             }
 
@@ -2357,18 +2461,18 @@
               "id": 93,
               "title": "Learn Elm",
               "user_id": 31,
-              "created_at": "2019-04-16T22:01:07.950Z",
-              "updated_at": "2019-04-16T22:01:07.950Z",
+              "created_at": "2019-04-19T11:50:52.786Z",
+              "updated_at": "2019-04-19T11:50:52.786Z",
               "items": [
             
               ],
               "user": {
                 "id": 31,
-                "name": "Roxanna Wisoky V",
-                "email": "randellboyer@bogisich.com",
-                "password_digest": "$2a$04$c6guGVTc9jEv4VZLer4P3.XyAb8lT1/QOmcRqjJ/qRM2g8Xa8bmPC",
-                "created_at": "2019-04-16T22:01:07.931Z",
-                "updated_at": "2019-04-16T22:01:07.931Z"
+                "name": "Magnolia Beahan",
+                "email": "freddiegislason@bodestark.co",
+                "password_digest": "$2a$04$ZcbRvTVOOEnkju6vw2xn/Ohe8JrJb7fH/HVHtgvRiTQDlYRqlG8DG",
+                "created_at": "2019-04-19T11:50:52.764Z",
+                "updated_at": "2019-04-19T11:50:52.764Z"
               }
             }
 
@@ -2399,18 +2503,18 @@
               "id": 104,
               "title": "Learn Elm",
               "user_id": 32,
-              "created_at": "2019-04-16T22:01:07.973Z",
-              "updated_at": "2019-04-16T22:01:07.973Z",
+              "created_at": "2019-04-19T11:50:52.813Z",
+              "updated_at": "2019-04-19T11:50:52.813Z",
               "items": [
             
               ],
               "user": {
                 "id": 32,
-                "name": "Flo Schuppe",
-                "email": "wilforddaniel@goodwinhartmann.io",
-                "password_digest": "$2a$04$5ZrEV7SeWe.Q0EbGeGktmOXoO/oyz.C7qUna9MNUbl4xt/vRnr/Da",
-                "created_at": "2019-04-16T22:01:07.956Z",
-                "updated_at": "2019-04-16T22:01:07.956Z"
+                "name": "Carma Stracke",
+                "email": "nathanael@schoen.com",
+                "password_digest": "$2a$04$kSJKKFcxqEQZdY5AQx7kyOkxBxMEoOu2LhtNyH6CDq484RyGZBslW",
+                "created_at": "2019-04-19T11:50:52.792Z",
+                "updated_at": "2019-04-19T11:50:52.792Z"
               }
             }
 
@@ -2447,11 +2551,11 @@
               ],
               "user": {
                 "id": 33,
-                "name": "Denita Kling II",
-                "email": "jesusaheidenreich@spinka.info",
-                "password_digest": "$2a$04$B99z.PMKSPsjc4LkvhVLk.CN7yN9jNBP6WSQsptSAQhIAOqG5f6WG",
-                "created_at": "2019-04-16T22:01:07.979Z",
-                "updated_at": "2019-04-16T22:01:07.979Z"
+                "name": "Lurlene McGlynn",
+                "email": "yongbrekke@kub.biz",
+                "password_digest": "$2a$04$exg6qfw6l/au6P5sxTTt6uPoOEXzmEU/Edbh4XJuoKNGtxihDXfpm",
+                "created_at": "2019-04-19T11:50:52.820Z",
+                "updated_at": "2019-04-19T11:50:52.820Z"
               }
             }
 
@@ -2460,7 +2564,7 @@
 + Parameters
     + id: `115` (number, required)
 
-+ Request updates the record
++ Request returns status code 200
 **PUT**&nbsp;&nbsp;`/todos/115`
 
     + Headers
@@ -2474,31 +2578,40 @@
               "title": "Shopping"
             }
 
-+ Response 204
-
-+ Request returns status code 204
-**PUT**&nbsp;&nbsp;`/todos/125`
++ Response 200
 
     + Headers
 
-            Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
-            Content-Type: application/json
+            Content-Type: application/json; charset=utf-8
 
     + Body
 
             {
-              "title": "Shopping"
+              "id": 115,
+              "title": "Shopping",
+              "user_id": 34,
+              "created_at": "2019-04-19T11:50:52.848Z",
+              "updated_at": "2019-04-19T11:50:52.867Z",
+              "items": [
+            
+              ],
+              "user": {
+                "id": 34,
+                "name": "Mathilde Keebler",
+                "email": "tomaufderhar@reynolds.info",
+                "password_digest": "$2a$04$AHPKxIZzMV3pGrApIVU1oep9l4QKZn6KeeMaNTlQljGgJ..IUMrCy",
+                "created_at": "2019-04-19T11:50:52.846Z",
+                "updated_at": "2019-04-19T11:50:52.846Z"
+              }
             }
-
-+ Response 204
 
 ### Delete todos/:id [DELETE /todos/{id}]
 
 + Parameters
-    + id: `135` (number, required)
+    + id: `125` (number, required)
 
 + Request returns status code 204
-**DELETE**&nbsp;&nbsp;`/todos/135`
+**DELETE**&nbsp;&nbsp;`/todos/125`
 
     + Headers
 

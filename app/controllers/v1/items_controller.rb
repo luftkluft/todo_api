@@ -21,7 +21,7 @@ module V1
 
     def update
       if @item.update(item_params)
-        head :no_content
+        json_response(@item)
       else
         raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_updated'))
       end
