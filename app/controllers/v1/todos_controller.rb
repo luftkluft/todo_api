@@ -3,8 +3,8 @@ module V1
     before_action :set_todo, only: %i[show update destroy]
 
     def index
-      @todos = current_user.todos.paginate(page: params[:page], per_page: 20)
-      json_response(@todos)
+      todos = current_user.todos.paginate(page: params[:page], per_page: 20)
+      json_response(todos)
     end
 
     def show
@@ -12,8 +12,8 @@ module V1
     end
 
     def create
-      if @todo = current_user.todos.create(todo_params)
-        json_response(@todo, :created)
+      if todo = current_user.todos.create(todo_params)
+        json_response(todo, :created)
       else
         raise(ExceptionHandler::InvalidOperation, I18n.t('controller.todo_not_created'))
       end
