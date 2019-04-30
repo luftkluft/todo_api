@@ -1,6 +1,6 @@
 RSpec.describe ApplicationController, type: :controller do
   let!(:user) { create(:user) }
-  let(:headers) { { 'Authorization' => token_generator(user.id) } }
+  let(:headers) { { 'Authorization' => valid_token(user.id) } }
   let(:invalid_headers) { { 'Authorization' => nil } }
 
   describe '#authorize_request' do

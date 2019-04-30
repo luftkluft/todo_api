@@ -10,7 +10,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   version :thumb do
-    process resize_to_fit: [RESIZE_SIZE, nil]
+    process resize_to_fit: [RESIZE_SIZE, RESIZE_SIZE]
   end
 
   def size_range
