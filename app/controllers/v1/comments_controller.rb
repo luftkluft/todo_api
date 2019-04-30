@@ -42,7 +42,7 @@ module V1
     private
 
     def comment_params
-      params.permit(:body, :image)
+      params.permit(:item_id, :id, :body, :image)
     end
 
     def set_todo
@@ -54,11 +54,11 @@ module V1
     end
 
     def set_item
-      @item = @todo.items.find_by(id: params[:item_id])
+      @item = @todo.items.find_by(id: comment_params[:item_id])
     end
 
     def set_comment
-      @comment = Comment.where(item: @todo.items).first if @todo
+      @comment = Comment.find_by(id: comment_params[:id])
     end
 
     def authorize_comment
@@ -66,11 +66,7 @@ module V1
     end
 
     def comments
-      comments = []
-      @todo.items.each do |item|
-        comments.push(Comment.find_by(item_id: item.id))
-      end
-      comments
+      Comment.where(item_id: @todo.items.ids).to_a
     end
   end
 end

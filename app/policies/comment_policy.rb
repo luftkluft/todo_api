@@ -1,9 +1,9 @@
 class CommentPolicy < ApplicationPolicy
-  attr_reader :user_todo_id, :comment
+  attr_reader :user_todo_ids, :comment
 
   def initialize(user, comment)
-    @user_todo_id = user.todos.ids
-    @comment =comment
+    @user_todo_ids = user.todos.ids
+    @comment = comment
   end
 
   def show?
@@ -25,6 +25,6 @@ class CommentPolicy < ApplicationPolicy
   private
 
   def authorize_user
-    @comment.item_id == Item.find_by(todo_id: @user_todo_id).id
+    Item.where(todo_id: @user_todo_ids).ids.include?(@comment.item_id)
   end
 end
