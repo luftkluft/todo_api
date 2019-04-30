@@ -3,6 +3,7 @@ module V1
     before_action :set_todo
     before_action :authorize_todo
     before_action :set_todo_item, only: %i[show update destroy]
+    before_action :authorize_item, only: %i[show update destroy]
 
     def index
       json_response(@todo.items)
@@ -48,6 +49,10 @@ module V1
 
     def authorize_todo
       authorize @todo
+    end
+
+    def authorize_item
+      authorize @item
     end
 
     def set_todo_item

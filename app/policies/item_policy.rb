@@ -1,24 +1,12 @@
 class ItemPolicy < ApplicationPolicy
-  attr_reader :user, :item
+  attr_reader :user_todo_id, :item
 
   def initialize(user, item)
-    @user = user
+    @user_todo_id = user.todos.ids
     @item = item
   end
 
-  def index?
-    authorize_user
-  end
-
   def show?
-    authorize_user
-  end
-
-  def create?
-    authorize_user
-  end
-
-  def new?
     authorize_user
   end
 
@@ -37,6 +25,6 @@ class ItemPolicy < ApplicationPolicy
   private
 
   def authorize_user
-    @item.user_id == @user.id
+    @user_todo_id.include?(@item.todo_id)
   end
 end

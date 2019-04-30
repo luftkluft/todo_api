@@ -4,6 +4,7 @@ module V1
     before_action :authorize_todo
     before_action :set_item, only: %i[create]
     before_action :set_comment, only: %i[show update destroy]
+    before_action :authorize_comment, only: %i[show update destroy]
 
     def index
       json_response(comments)
@@ -57,6 +58,10 @@ module V1
 
     def set_comment
       @comment = Comment.where(item: @todo.items).first if @todo
+    end
+
+    def authorize_comment
+      authorize @comment
     end
 
     def comments
