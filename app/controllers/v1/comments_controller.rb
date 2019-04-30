@@ -1,6 +1,7 @@
 module V1
   class CommentsController < ApplicationController
     before_action :set_todo
+    before_action :authorize_todo
     before_action :set_item, only: %i[create]
     before_action :set_comment, only: %i[show update destroy]
 
@@ -44,6 +45,9 @@ module V1
 
     def set_todo
       @todo = Todo.find(params[:todo_id])
+    end
+
+    def authorize_todo
       authorize @todo
     end
 
