@@ -13,10 +13,11 @@ module V1
     end
 
     def create
-      if todo = current_user.todos.create(todo_params)
+      todo = current_user.todos.create(todo_params)
+      if todo
         json_response(todo, :created)
       else
-        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.todo_not_created'))
+        raise(ExceptionHandler::InvalidOperation, todo.errors)
       end
     end
 
@@ -24,7 +25,7 @@ module V1
       if @todo.update(todo_params)
         json_response(@todo)
       else
-        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.todo_not_updated'))
+        raise(ExceptionHandler::InvalidOperation, @todo.errors)
       end
     end
 
@@ -32,7 +33,7 @@ module V1
       if @todo.destroy
         head :no_content
       else
-        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.todo_not_deleted'))
+        raise(ExceptionHandler::InvalidOperation, @todo.errors)
       end
     end
 

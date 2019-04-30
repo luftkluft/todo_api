@@ -15,10 +15,11 @@ module V1
     end
 
     def create
-      if @item.comments.create(comment_params)
-        json_response(@item, :created)
+      comment = @item.comments.create(comment_params)
+      if comment
+        json_response(comment, :created)
       else
-        raise(ExceptionHandler::MissingToken, I18n.t('controller.comment_not_created'))
+        raise(ExceptionHandler::MissingToken, comment.errors)
       end
     end
 
@@ -26,7 +27,7 @@ module V1
       if @comment.update(comment_params)
         json_response(@comment)
       else
-        raise(ExceptionHandler::MissingToken, I18n.t('controller.comment_not_updated'))
+        raise(ExceptionHandler::MissingToken, @comment.errors)
       end
     end
 
@@ -34,7 +35,7 @@ module V1
       if @comment.destroy
         head :no_content
       else
-        raise(ExceptionHandler::MissingToken, I18n.t('controller.comment_not_deleted'))
+        raise(ExceptionHandler::MissingToken, @comment.errors)
       end
     end
 

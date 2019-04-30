@@ -14,10 +14,11 @@ module V1
     end
 
     def create
-      if @todo.items.create(item_params)
-        json_response(@todo, :created)
+      item = @todo.items.create(item_params)
+      if item
+        json_response(item, :created)
       else
-        raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_created'))
+        raise(ExceptionHandler::MissingToken, item.errors)
       end
     end
 
@@ -25,7 +26,7 @@ module V1
       if @item.update(item_params)
         json_response(@item)
       else
-        raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_updated'))
+        raise(ExceptionHandler::MissingToken, @item.errors)
       end
     end
 
@@ -33,7 +34,7 @@ module V1
       if @item.destroy
         head :no_content
       else
-        raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_deleted'))
+        raise(ExceptionHandler::MissingToken, @item.errors)
       end
     end
 
