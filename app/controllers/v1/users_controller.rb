@@ -7,7 +7,7 @@ module V1
         response = { message: I18n.t('account_created'), auth_token: auth_token }
         json_response(response, :created)
       else
-        raise(ExceptionHandler::MissingToken, I18n.t('account_not_created'))
+        raise(ExceptionHandler::MissingToken, user.errors)
       end
     end
 
