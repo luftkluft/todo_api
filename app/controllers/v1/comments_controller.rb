@@ -7,6 +7,8 @@ module V1
     before_action :authorize_comment, only: %i[show update destroy]
 
     def index
+      # puts '*************************'
+      # puts comments
       json_response(comments)
     end
 
@@ -66,7 +68,7 @@ module V1
     end
 
     def comments
-      Comment.where(item_id: @todo.items.ids).to_a
+      Comment.where(item_id: @todo.items.ids)
     end
   end
 end
