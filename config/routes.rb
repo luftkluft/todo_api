@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope module: :v1, constraints: ApiVersion.new('v1', true) do
+  scope module: :v1 do
     post 'signup', to: 'users#create'
     resources :todos do
       resources :items do
