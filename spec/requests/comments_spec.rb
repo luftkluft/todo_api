@@ -47,8 +47,8 @@ RSpec.describe 'Comments API' do
     context 'when an invalid request' do
       before { post todo_item_comments_path(todo_id: todo_id, item_id: item_id), params: {}, headers: headers }
 
-      it 'returns status code 201', :dox do
-        expect(response).to have_http_status(201)
+      it 'returns status code 422', :dox do
+        expect(response).to have_http_status(422)
       end
     end
   end

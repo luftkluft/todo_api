@@ -13,8 +13,8 @@ module V1
     end
 
     def create
-      todo = current_user.todos.create(todo_params)
-      if todo
+      todo = current_user.todos.build(todo_params)
+      if todo.save
         json_response(todo, :created)
       else
         raise(ExceptionHandler::InvalidOperation, todo.errors)

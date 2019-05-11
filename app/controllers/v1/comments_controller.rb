@@ -15,8 +15,8 @@ module V1
     end
 
     def create
-      comment = @item.comments.create(comment_params)
-      if comment
+      comment = @item.comments.build(comment_params)
+      if comment.save
         json_response(comment, :created)
       else
         raise(ExceptionHandler::MissingToken, comment.errors)
@@ -54,11 +54,11 @@ module V1
     end
 
     def set_item
-      @item = @todo.items.find_by(id: comment_params[:item_id])
+      @item = @todo.items.find(comment_params[:item_id])
     end
 
     def set_comment
-      @comment = Comment.find_by(id: comment_params[:id])
+      @comment = Comment.find(comment_params[:id])
     end
 
     def authorize_comment

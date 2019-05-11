@@ -69,8 +69,8 @@ RSpec.describe 'Todos API', type: :request do
       let(:invalid_attributes) { { title: nil }.to_json }
       before { post todos_path, params: invalid_attributes, headers: headers }
 
-      it 'returns status code 201', :dox do
-        expect(response).to have_http_status(201)
+      it 'returns status code 422', :dox do
+        expect(response).to have_http_status(422)
       end
     end
   end

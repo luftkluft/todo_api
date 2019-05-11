@@ -14,8 +14,8 @@ module V1
     end
 
     def create
-      item = @todo.items.create(item_params)
-      if item
+      item = @todo.items.build(item_params)
+      if item.save
         json_response(item, :created)
       else
         raise(ExceptionHandler::MissingToken, item.errors)
@@ -57,7 +57,7 @@ module V1
     end
 
     def set_todo_item
-      @item = @todo.items.find(params[:id]) if @todo
+      @item = @todo.items.find(params[:id])
     end
   end
 end

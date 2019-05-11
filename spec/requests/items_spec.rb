@@ -78,8 +78,8 @@ RSpec.describe 'Items API' do
     context 'when an invalid request' do
       before { post todo_items_path(todo_id: todo_id), params: {}, headers: headers }
 
-      it 'returns status code 201', :dox do
-        expect(response).to have_http_status(201)
+      it 'returns status code 422', :dox do
+        expect(response).to have_http_status(422)
       end
     end
   end
