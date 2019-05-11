@@ -7,8 +7,6 @@ module V1
     before_action :authorize_comment, only: %i[show update destroy]
 
     def index
-      # puts '*************************'
-      # puts comments
       json_response(comments)
     end
 
