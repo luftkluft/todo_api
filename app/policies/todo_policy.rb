@@ -1,6 +1,4 @@
 class TodoPolicy < ApplicationPolicy
-  attr_reader :user, :todo
-
   def index?
     authorize_user
   end
@@ -32,7 +30,7 @@ class TodoPolicy < ApplicationPolicy
   private
 
   def authorize_user
-    @todo = @record
-    @todo.user_id == @user.id
+    todo = @record
+    todo.user_id == @user.id
   end
 end
