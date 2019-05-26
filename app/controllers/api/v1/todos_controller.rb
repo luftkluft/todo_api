@@ -1,4 +1,4 @@
-module V1
+module Api::V1
   class TodosController < ApplicationController
     before_action :set_todo, only: %i[show update destroy]
     before_action :authorize_todo, only: %i[show update destroy]

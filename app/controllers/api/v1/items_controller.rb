@@ -1,4 +1,4 @@
-module V1
+module Api::V1
   class ItemsController < ApplicationController
     before_action :set_todo
     before_action :authorize_todo

@@ -7,9 +7,9 @@ RSpec.describe 'Items API' do
   let(:id) { items.first.id }
   let(:headers) { valid_headers }
 
-  describe 'GET /todos/:todo_id/items' do
+  describe 'GET /api/v1/todos/:todo_id/items' do
     include Docs::V1::Items::Index
-    before { get todo_items_path(todo_id: todo_id), params: {}, headers: headers }
+    before { get api_v1_todo_items_path(todo_id: todo_id), params: {}, headers: headers }
 
     context 'when todo exists' do
       it 'returns status code 200', :dox do
@@ -34,9 +34,9 @@ RSpec.describe 'Items API' do
     end
   end
 
-  describe 'GET /todos/:todo_id/items/:id' do
+  describe 'GET /api/v1/todos/:todo_id/items/:id' do
     include Docs::V1::Items::Show
-    before { get todo_item_path(todo_id: todo_id, id: id), params: {}, headers: headers }
+    before { get api_v1_todo_item_path(todo_id: todo_id, id: id), params: {}, headers: headers }
 
     context 'when todo item exists' do
       it 'returns status code 200', :dox do
@@ -61,13 +61,13 @@ RSpec.describe 'Items API' do
     end
   end
 
-  describe 'POST /todos/:todo_id/items' do
+  describe 'POST /api/v1/todos/:todo_id/items' do
     include Docs::V1::Items::Create
     let(:valid_attributes) { { name: 'Visit Narnia', done: false }.to_json }
 
     context 'when request attributes are valid' do
       before do
-        post todo_items_path(todo_id: todo_id), params: valid_attributes, headers: headers
+        post api_v1_todo_items_path(todo_id: todo_id), params: valid_attributes, headers: headers
       end
 
       it 'returns status code 201', :dox do
@@ -76,7 +76,7 @@ RSpec.describe 'Items API' do
     end
 
     context 'when an invalid request' do
-      before { post todo_items_path(todo_id: todo_id), params: {}, headers: headers }
+      before { post api_v1_todo_items_path(todo_id: todo_id), params: {}, headers: headers }
 
       it 'returns status code 422', :dox do
         expect(response).to have_http_status(422)
@@ -84,12 +84,12 @@ RSpec.describe 'Items API' do
     end
   end
 
-  describe 'PUT /todos/:todo_id/items/:id' do
+  describe 'PUT /api/v1/todos/:todo_id/items/:id' do
     include Docs::V1::Items::Update
     let(:valid_attributes) { { name: 'Mozart' }.to_json }
 
     before do
-      put todo_item_path(todo_id: todo_id, id: id), params: valid_attributes, headers: headers
+      put api_v1_todo_item_path(todo_id: todo_id, id: id), params: valid_attributes, headers: headers
     end
 
     context 'when item exists' do
@@ -116,9 +116,9 @@ RSpec.describe 'Items API' do
     end
   end
 
-  describe 'DELETE /todos/:id/items/:id' do
+  describe 'DELETE /api/v1/todos/:id/items/:id' do
     include Docs::V1::Items::Destroy
-    before { delete todo_item_path(todo_id: todo_id, id: id), params: {}, headers: headers }
+    before { delete api_v1_todo_item_path(todo_id: todo_id, id: id), params: {}, headers: headers }
 
     it 'returns status code 204', :dox do
       expect(response).to have_http_status(204)

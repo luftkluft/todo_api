@@ -1,4 +1,4 @@
-module V1
+module Api::V1
   class UsersController < ApplicationController
     skip_before_action :authorize_request, only: :create
     def create
