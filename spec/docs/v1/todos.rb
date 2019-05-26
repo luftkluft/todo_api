@@ -5,26 +5,26 @@ module Docs
 
       document :api do
         resource 'Todos' do
-          endpoint '/todos'
-          endpoint '/todos/:id'
+          endpoint '/api/v1/todos'
+          endpoint '/api/v1/todos/:id'
           group 'Todo_API'
         end
       end
 
       document :index do
-        action 'Get todos'
+        action 'Get /api/v1/todos'
       end
       document :show do
-        action 'Get todos/:id'
+        action 'Get /api/v1/todos/:id'
       end
       document :create do
-        action 'Post todos'
+        action 'Post /api/v1/todos'
       end
       document :update do
-        action 'Put todos/:id'
+        action 'Put /api/v1/todos/:id'
       end
       document :destroy do
-        action 'Delete todos/:id'
+        action 'Delete /api/v1/todos/:id'
       end
     end
   end
