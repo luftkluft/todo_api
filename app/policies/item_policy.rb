@@ -7,10 +7,6 @@ class ItemPolicy < ApplicationPolicy
     authorize_user
   end
 
-  def edit?
-    update?
-  end
-
   def destroy?
     authorize_user
   end
@@ -18,8 +14,6 @@ class ItemPolicy < ApplicationPolicy
   private
 
   def authorize_user
-    user_todo_ids = @user.todos.ids
-    item = @record
-    user_todo_ids.include?(item.todo_id)
+    @record.todo.user_id == @user.id
   end
 end
