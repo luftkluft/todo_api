@@ -28,7 +28,7 @@ RSpec.describe 'Users API', type: :request do
       before { post api_v1_signup_path, params: {}, headers: headers }
 
       it 'does not create a new user', :dox do
-        expect(response).to have_http_status(401)
+        expect(response).to have_http_status(422)
       end
     end
   end
