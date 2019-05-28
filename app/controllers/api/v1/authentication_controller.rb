@@ -13,6 +13,5 @@ module Api
         params.permit(:email, :password)
       end
     end
-  end  
+  end
 end
-

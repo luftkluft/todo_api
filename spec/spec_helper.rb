@@ -11,4 +11,17 @@ RSpec.configure do |config|
   end
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
+
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+
+  Dox.configure do |config|
+    config.header_file_path = Rails.root.join('spec/docs/v1/descriptions/header.md')
+    config.desc_folder_path = Rails.root.join('spec/docs/v1/descriptions')
+    config.headers_whitelist = ['Accept', 'X-Auth-Token']
+  end
 end
