@@ -11,10 +11,6 @@ class TodoPolicy < ApplicationPolicy
     authorize_user
   end
 
-  def new?
-    authorize_user
-  end
-
   def update?
     authorize_user
   end
