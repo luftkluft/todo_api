@@ -19,7 +19,7 @@ module Api
         if item.save
           json_response(item, :created)
         else
-          raise(ExceptionHandler::MissingToken, item.errors)
+          raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_created'))
         end
       end
 
@@ -27,7 +27,7 @@ module Api
         if @item.update(item_params)
           json_response(@item)
         else
-          raise(ExceptionHandler::MissingToken, @item.errors)
+          raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_updated'))
         end
       end
 
@@ -35,7 +35,7 @@ module Api
         if @item.destroy
           head :no_content
         else
-          raise(ExceptionHandler::MissingToken, @item.errors)
+          raise(ExceptionHandler::MissingToken, I18n.t('controller.item_not_deleted'))
         end
       end
 
@@ -47,6 +47,8 @@ module Api
 
       def set_todo
         @todo = Todo.find(params[:todo_id])
+      rescue StandardError
+        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.todo_not_found'))
       end
 
       def authorize_todo
@@ -59,6 +61,8 @@ module Api
 
       def set_todo_item
         @item = @todo.items.find(params[:id])
+      rescue StandardError
+        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.item_not_found'))
       end
     end
   end

@@ -1,8 +1,8 @@
 RSpec.describe TodoPolicy, type: :policy do
   let!(:user) { create(:user) }
   let!(:todos) { create_list(:todo, 10, user_id: user.id) }
-  let!(:user2) { create(:user, id: 1000) }
-  let!(:second_todos) { create_list(:todo, 10, user_id: 1000) }
+  let!(:user2) { create(:user, id: user.id + 1) }
+  let!(:second_todos) { create_list(:todo, 10, user_id: user.id + 1) }
 
   subject { described_class }
 

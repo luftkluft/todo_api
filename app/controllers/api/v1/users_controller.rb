@@ -9,7 +9,7 @@ module Api
           response = { message: I18n.t('account_created'), auth_token: auth_token }
           json_response(response, :created)
         else
-          raise(ExceptionHandler::MissingToken, user.errors)
+          raise(ExceptionHandler::MissingToken, I18n.t('account_not_created'))
         end
       end
 

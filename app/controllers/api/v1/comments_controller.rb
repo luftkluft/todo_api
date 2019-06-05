@@ -20,7 +20,7 @@ module Api
         if comment.save
           json_response(comment, :created)
         else
-          raise(ExceptionHandler::MissingToken, comment.errors)
+          raise(ExceptionHandler::InvalidOperation, I18n.t('controller.comment_not_created'))
         end
       end
 
@@ -28,7 +28,7 @@ module Api
         if @comment.update(comment_params)
           json_response(@comment)
         else
-          raise(ExceptionHandler::MissingToken, @comment.errors)
+          raise(ExceptionHandler::InvalidOperation, I18n.t('controller.comment_not_updated'))
         end
       end
 
@@ -36,7 +36,7 @@ module Api
         if @comment.destroy
           head :no_content
         else
-          raise(ExceptionHandler::MissingToken, @comment.errors)
+          raise(ExceptionHandler::InvalidOperation, I18n.t('controller.comment_not_deleted'))
         end
       end
 
@@ -48,6 +48,8 @@ module Api
 
       def set_todo
         @todo = Todo.find(params[:todo_id])
+      rescue StandardError
+        raise(ExceptionHandler::InvalidOperation, with: :unprocessable_response)
       end
 
       def authorize_todo
@@ -56,10 +58,14 @@ module Api
 
       def set_item
         @item = @todo.items.find(comment_params[:item_id])
+      rescue StandardError
+        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.item_not_found'))
       end
 
       def set_comment
         @comment = Comment.find(comment_params[:id])
+      rescue StandardError
+        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.comment_not_found'))
       end
 
       def authorize_comment
@@ -68,6 +74,8 @@ module Api
 
       def comments
         Comment.where(item_id: @todo.items.ids)
+      rescue StandardError
+        raise(ExceptionHandler::InvalidOperation, I18n.t('controller.comment_not_found'))
       end
     end
   end

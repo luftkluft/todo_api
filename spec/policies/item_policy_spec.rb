@@ -2,8 +2,8 @@ RSpec.describe ItemPolicy, type: :policy do
   let!(:user) { create(:user) }
   let!(:todo) { create(:todo, user_id: user.id) }
   let!(:item) { create(:item, todo_id: todo.id) }
-  let!(:user2) { create(:user, id: 1000) }
-  let!(:second_todo) { create(:todo, user_id: 1000) }
+  let!(:user2) { create(:user, id: user.id + 1) }
+  let!(:second_todo) { create(:todo, user_id: user.id + 1) }
   let!(:item_second) { create(:item, todo_id: second_todo.id) }
 
   subject { described_class }

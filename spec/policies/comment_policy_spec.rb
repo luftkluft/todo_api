@@ -3,8 +3,8 @@ RSpec.describe CommentPolicy, type: :policy do
   let!(:todo) { create(:todo, user_id: user.id) }
   let!(:item) { create(:item, todo_id: todo.id) }
   let!(:comment) { create(:comment, item_id: item.id) }
-  let!(:user2) { create(:user, id: 1000) }
-  let!(:second_todo) { create(:todo, user_id: 1000) }
+  let!(:user2) { create(:user, id: user.id + 1) }
+  let!(:second_todo) { create(:todo, user_id: user.id + 1) }
   let!(:second_item) { create(:item, todo_id: second_todo.id) }
   let!(:second_comment) { create(:comment, item_id: second_item.id) }
 
